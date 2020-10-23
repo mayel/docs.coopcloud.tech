@@ -1,0 +1,28 @@
+---
+version: "3.8"
+
+services:
+  mkdocs:
+    image: "decentral1se/docs.cloud.autonomic.zone:latest"
+    networks:
+      - proxy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+      start_period: 15s
+    deploy:
+      update_config:
+        failure_action: rollback
+        order: start-first
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.services.mkdocs.loadbalancer.server.port=8000"
+        - "traefik.http.routers.mkdocs.rule=Host(`docs.cloud.autonomic.zone`)"
+        - "traefik.http.routers.mkdocs.entrypoints=web-secure"
+        - "traefik.http.routers.mkdocs.tls.certresolver=production"
+
+networks:
+  proxy:
+    external: true

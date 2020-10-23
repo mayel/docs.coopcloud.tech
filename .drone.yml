@@ -1,0 +1,23 @@
+---
+kind: pipeline
+name: deploy to swarm.autonomic.zone
+steps:
+  - name: bundle static
+    image: plugins/docker
+    settings:
+      username:
+        from_secret: docker_reg_username
+      password:
+        from_secret: docker_reg_passwd
+      repo: decentral1se/docs.cloud.autonomic.zone
+      tags: latest
+
+  - name: deployment
+    image: decentral1se/stack-ssh-deploy:latest
+    settings:
+      stack: coop_cloud_mkdocs
+      deploy_key:
+        from_secret: drone_ssh_swarm.autonomic.zone
+trigger:
+  branch:
+    - master

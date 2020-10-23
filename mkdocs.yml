@@ -1,0 +1,35 @@
+---
+site_author: Cooperative Cloud
+site_name: Cooperative Cloud Documentation
+site_url: https://docs.cloud.autonomic.zone
+
+theme:
+  name: material
+  features:
+    - tabs
+  palette:
+    primary: light blue
+    accent: purple
+
+copyright: Copyright &copy; 2020 Cooperative Cloud
+
+markdown_extensions:
+  - meta
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - attr_list
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.magiclink
+
+plugins:
+  - search
+  - awesome-pages
+
+repo_name: coop-cloud/docs.cloud.autonomic.zone
+repo_url: https://git.autonomic.zone/coop-cloud/docs.cloud.autonomic.zone
+edit_uri: _edit/master/docs/
