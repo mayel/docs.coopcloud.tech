@@ -2,7 +2,7 @@
 version: "3.8"
 
 services:
-  mkdocs:
+  app:
     image: "decentral1se/docs.cloud.autonomic.zone:latest"
     networks:
       - proxy
