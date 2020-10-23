@@ -18,10 +18,10 @@ services:
         order: start-first
       labels:
         - "traefik.enable=true"
-        - "traefik.http.services.mkdocs.loadbalancer.server.port=8000"
-        - "traefik.http.routers.mkdocs.rule=Host(`docs.cloud.autonomic.zone`)"
-        - "traefik.http.routers.mkdocs.entrypoints=web-secure"
-        - "traefik.http.routers.mkdocs.tls.certresolver=production"
+        - "traefik.http.services.coop-cloud-mkdocs.loadbalancer.server.port=8000"
+        - "traefik.http.routers.coop-cloud-mkdocs.rule=Host(`docs.cloud.autonomic.zone`)"
+        - "traefik.http.routers.coop-cloud-mkdocs.entrypoints=web-secure"
+        - "traefik.http.routers.coop-cloud-mkdocs.tls.certresolver=production"
 
 networks:
   proxy:
