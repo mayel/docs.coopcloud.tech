@@ -14,3 +14,12 @@ HOWTOs:
 
  - [Deploy an HTML site](howto/html-website.md)
  - [CoCl-ise an app](howto/convert-app.md)
+
+## Definitions
+
+CoCl is a **philosophy**.
+
+ - .. to get started, you create a **server**, e.g. a new Hetzner VPS, including
+   your local configuration to connect to it.
+ - .. then you install an **app** like wordpress or nextcloud, which is made up of multiple **services**
+ - .. and configure your app.
