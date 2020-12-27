@@ -1,0 +1,37 @@
+# "This is foolishness, what about ...?"
+
+ - Kubernetes
+     - 👍 Helm charts are available for some key apps already
+     - 👎 too big -- requires 3rd party tools to run a single-node instance
+ - Bitnami stacks
+ - Cloudron
+     - 👍 Lovely web interface for app, domain & user management
+     - 👍 Bigger library of apps
+     - 👍 Built-in SSO using LDAP, which is compatible with more apps and often has a better user interface than OAuth
+     - 👍 Most apps are actively maintained by the Cloudron team
+     - 👎 Moving away from open source. Free version has a 1-app limit
+     - 👎 Based on Docker images, not stacks, so multi-process apps (e.g. parsoid for Mediawiki) are a non-starter
+     - 👎 Difficult to extend apps
+     - 👎 Only supported on Ubuntu
+     - 👎 Upstreams aren't involved
+ - Yunohost
+     - 👍 Lovely web interface for app, domain & user management
+     - 👍 Bigger library of apps
+     - 👍 Awesome backup / deploy / restore continuous integration testing
+     - 👍 Supports hosting apps in subdirectories as well as subdomains
+     - 👍 Doesn't require a public-facing IP
+     - 👎 Upstreams aren't involved
+     - 👎 Not idempotent: uninstalling apps leaves growing cruft
+ - Ansible
+     - 👍 Includes server creation and bootstrapping
+     - 👎 Upstreams aren't publishing Ansible roles
+     - 👎 Lots of manual work involved in things like app isolation, backups, updates
+ - `docker-compose`
+     - 👎 Manual work required for process monitoring 
+     - 👎 Secret storage not available yet
+     - 👎 [Not recommended](https://github.com/BretFisher/ama/issues/8)
+ - Manually installing apps
+     - 👍 Simple - just follow upstream instructions to install and update
+     - 👎 Loads of manual work required for app isolation and backups
+     - 👎 Array of sysadmin skills required to install apps
+     - 👎 Hard to share configs into the commons

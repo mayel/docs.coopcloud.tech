@@ -31,5 +31,26 @@ CoCl is a **philosophy**.
  - then you install an **app** like wordpress or nextcloud, which is made up of multiple **services**...
  - .. and configure your app.
 
+## Technical description
+
+Software-wise, CoöpCloud is:
+
+ - [`coop-cloud`](https://git.autonomic.zone/coop-cloud/), a collection of Docker "swarm mode" configurations for popular web apps
+ - [`abra`](https://git.autonomic.zone/autonomic-cooperative/abra), a simple tool for Docker swarm management
+ - a recommended default set of stacks:
+    - Traefik for SSL & routing
+    - `postfix-relay` for outgoing email
+
+## Principles / features:
+
+ - Security by default
+     - Secret storage using `docker secret` (["What makes it secure?"](https://github.com/BretFisher/ama/issues/86))
+     - Automatic SSL using Traefik & LetsEncrypt
+ - Zero-downtime deployments (for apps with healthchecks defined)
+ - Continuous integration testing using Drone and our [`stack-ssh-deploy`](https://git.autonomic.zone/coop-cloud/stack-ssh-deploy) plugin
+ - Low maintenance overhead:
+     - Automatic tracking of upstream Docker images using `renovate-bot`
+     - Avoiding custom Docker images as far as possible
+
 [traefik]: https://hub.docker.com/_/traefik?tab=tags
 [mariadb]: https://hub.docker.com/_/mariadb?tab=tags
