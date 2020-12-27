@@ -26,9 +26,9 @@ HOWTOs:
 
 CoCl is a **philosophy**.
 
- - .. to get started, you create a **server**, e.g. a new VPS, including
-   your local configuration to connect to it.
- - .. then you install an **app** like wordpress or nextcloud, which is made up of multiple **services**
+ - To get started, you create a **server**, e.g. a new VPS, including
+   your local configuration to connect to it...
+ - then you install an **app** like wordpress or nextcloud, which is made up of multiple **services**...
  - .. and configure your app.
 
 [traefik]: https://hub.docker.com/_/traefik?tab=tags
