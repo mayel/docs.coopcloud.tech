@@ -21,6 +21,6 @@ We're currently using Coöp Cloud for some of our internal infrastructure:
 
 Relevant HOWTOs:
 
-- [Set up a new Docker swarm box](setting-up-new-docker-swarm-box.md)
-- [Working with Docker swarm](working-with-docker-swarm.md)
-- [Logging with systemd-journald](logging-with-systemd-journald.md)
+- [Set up a new Docker swarm box](newswarm.md)
+- [Working with Docker swarm](working.md)
+- [Logging with systemd-journald](logging.md)
