@@ -15,13 +15,13 @@ extractive forces brings the idea of offering an alternative into question.
 
 [The technological crisis is a social crisis]. Therefore, building an
 alternative digital future cannot be done without broad and meaningful
-cooperation. The Cooperative Cloud project takes as its starting point the
+cooperation. The Cooperative Cloud project takes as its starting point, the
 independent free software community standards, tools, approaches and governance
-methods in order to build up a platform which cooperatives can make use of as
-part of offering a real alternative.
+methods which make up the platform which cooperatives can make use of as part
+of offering a real alternative.
 
 The Cooperative Cloud should not be seen as a technical solution for a social
-problem (i.e. "Big Tech"). We understand that owning the common technological
+problem (i.e. "Big Tech"). We understsand that owning the common technological
 means for delivering free software is only one part of the struggle to reclaim
 technology today. If antitrust litigation dismantled the monopolies tomorrow,
 we'd need our own organisations and robust technical capacity to fill the
