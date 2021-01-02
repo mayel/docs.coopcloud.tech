@@ -33,5 +33,5 @@ have come to rely on.
 To learn more, please see the [Getting Started guide].
 
 [autonomic]: https://autonomic.zone/
-[the technological crisis is a social crisis]: https://i.imgur.com/TmuTWBl.jpg
+[the technological crisis is a social crisis]: https://vvvvvvaria.org/~decentral1se/w/organising/crisis.jpeg
 [getting started guide]: getting-started/guide.md
