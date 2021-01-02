@@ -17,8 +17,8 @@ extractive forces brings the idea of offering an alternative into question.
 alternative digital future cannot be done without broad and meaningful
 cooperation. The Cooperative Cloud project takes as its starting point, the
 independent free software community standards, tools, approaches and governance
-methods which make up the platform which cooperatives can make use of as part
-of offering a real alternative.
+methods which cooperatives can make use of as part of offering a real
+alternative.
 
 The Cooperative Cloud should not be seen as a technical solution for a social
 problem (i.e. "Big Tech"). We understsand that owning the common technological
