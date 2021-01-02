@@ -21,7 +21,7 @@ methods which cooperatives can make use of as part of offering a real
 alternative.
 
 The Cooperative Cloud should not be seen as a technical solution for a social
-problem (i.e. "Big Tech"). We understsand that owning the common technological
+problem (i.e. "Big Tech"). We understand that owning the common technological
 means for delivering free software is only one part of the struggle to reclaim
 technology today. If antitrust litigation dismantled the monopolies tomorrow,
 we'd need our own organisations and robust technical capacity to fill the
