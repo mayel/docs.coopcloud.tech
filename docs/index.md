@@ -7,11 +7,11 @@ cooperatives which proposes a shared social and technical infrastructure for
 the operation and management of free software applications. The project was
 initiated by [Autonomic].
 
-The project arose out the understanding that technology cooperatives continue
-to struggle to deliver free software solutions without relying on monopolies
-such as Google, Microsoft and Amazon for technical infrastructure and software
-tools. The contradictions of working with these abusive and extractive forces
-brings the idea of offering an alternative into question.
+The project arose out of the understanding that technology cooperatives
+continue to struggle to deliver free software solutions without relying on
+monopolies such as Google, Microsoft and Amazon for technical infrastructure
+and software tools. The contradictions of working with these abusive and
+extractive forces brings the idea of offering an alternative into question.
 
 [The technological crisis is a social crisis]. Therefore, building an
 alternative digital future cannot be done without broad and meaningful
