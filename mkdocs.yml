@@ -6,14 +6,13 @@ site_url: https://cloud.autonomic.zone
 theme:
   name: material
   features:
-    - navigation.tabs
     - navigation.instant
     - toc.integrate
   palette:
     primary: light pink
     accent: purple
 
-copyright: Copyleft &copy; 2021 The Cooperative Cloud
+copyright: Copyleft 🄯 2021 The Cooperative Cloud
 
 markdown_extensions:
   - meta
@@ -30,6 +29,16 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - A cooperative alternative: index.md
+  - Getting started guide:
+      - Architecture overview: overview.md
+      - Deploy your first application: deploy.md
+  - Application catalogue: apps.md
+  - Tutorials:
+      - Package your first application: package.md
+  - Frequently asked questions: faq.md
 
 plugins:
   - search
