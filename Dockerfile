@@ -8,4 +8,6 @@ ENTRYPOINT ["/bin/sh"]
 
 RUN apk add --no-cache curl
 
+RUN pip install mkdocs-awesome-pages-plugin
+
 CMD ["-c", "mkdocs build && python -m http.server --bind 0.0.0.0 --directory site 8000"]

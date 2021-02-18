@@ -1,17 +1,19 @@
 ---
-site_author: Cooperative Cloud
-site_name: Cooperative Cloud
-site_url: https://docs.cloud.autonomic.zone
+site_author: The Cooperative Cloud
+site_name: The Cooperative Cloud
+site_url: https://cloud.autonomic.zone
 
 theme:
   name: material
   features:
-    - tabs
+    - navigation.tabs
+    - navigation.instant
+    - toc.integrate
   palette:
-    primary: light blue
+    primary: light pink
     accent: purple
 
-copyright: Copyright &copy; 2020 Cooperative Cloud
+copyright: Copyleft &copy; 2021 The Cooperative Cloud
 
 markdown_extensions:
   - meta
@@ -25,6 +27,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tilde
   - pymdownx.magiclink
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
   - search
