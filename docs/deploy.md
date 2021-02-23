@@ -70,7 +70,7 @@ $ abra app new --server example.com --domain traefik.example.com traefik
 $ abra app traefik.autonomic.zone deploy
 ```
 
-## Deploy Nexcloud
+## Deploy Nextcloud
 
 And now we can deploy apps. Go ahead and create a new nextcloud app, generate secrets and deploy it.
 
