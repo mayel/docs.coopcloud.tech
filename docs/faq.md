@@ -136,6 +136,6 @@ we see and how that relates to our goals here.
 - 👎 Array of sysadmin skills required to install applications
 - 👎 Hard to share configurations into the commons
 
-# What licensing model does the project use?
+## What licensing model does the project use?
 
 The Cooperative Cloud will always be available under copyleft licenses.
