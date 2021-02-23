@@ -90,7 +90,7 @@ title: Application catalogue
 
 [statuspal]: https://git.autonomic.zone/coop-cloud/statuspal
 
-## Status legend:
+## Status legend
 
 ### Overall
 
