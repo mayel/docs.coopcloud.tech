@@ -4,18 +4,16 @@ title: Frequently asked questions
 
 ## What is the Co-op Cloud?
 
-Co-op Cloud aims to make hosting free software applications simple for small providers. It uses the latest container technologies and innovations and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all.
-
-The project is intended for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure.
+Co-op Cloud aims to make hosting free software applications simple for small providers. It uses the latest container technologies and innovations and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all. The project is intended for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure.
 
 ## Who is behind the project?
-The project was started by workers at [Autonomic](https://autonomic.zone/) which is a [workers co-operative](https://en.wikipedia.org/wiki/Worker_cooperative) providing technologies and infrastructure to empower users to make a positive impact on the world. 
 
-We use Co-op Cloud in production amongst other systems.
+The project was started by workers at [Autonomic](https://autonomic.zone/) which is a [workers co-operative](https://en.wikipedia.org/wiki/Worker_cooperative) providing technologies and infrastructure to empower users to make a positive impact on the world. We use Co-op Cloud in production amongst other systems.
 
 ## Why Co-op Cloud?
 
 #### 👍
+
 - 👍 Thin "ease of use" layer on top of already standardised tooling
 - 👍 Extremely modular
 - 👍 Collective commons based configuration via public git repos
@@ -26,18 +24,15 @@ We use Co-op Cloud in production amongst other systems.
 - 👍 Horizontal and vertical scaling
 
 #### 👎
+
 - 👎 Still a very young project
 - 👎 Limited availability of well tested apps
 - 👎 Requires command line knowledge to use
 - 👎 Currently x86 only
 
-## Why Docker Compose?
-
-## Why Docker Swarm?
-
 ## Why start another project?
 
-One of our core principles is to not re-invent the wheel. However, fitting needs into existing projects doesn't always work out. Some of the developers on this project were also once developers on the other existing projects.
+Please read our [initial project announcement post](#TODO) for more on this.
 
 ## What about `$alternative`?
 
@@ -90,14 +85,14 @@ up-and-running in the ecosystem as they don't necessarily meet our needs as a sm
 
 #### 👎
 
-- 👎 Upstream free software communities aren't publishing Ansible roles.
-- 👎 Lots of manual work involved in things like application isolation, backups, updates.
+- 👎 Upstream libre software communities aren't publishing Ansible roles
+- 👎 Lots of manual work involved in things like app isolation, backups, updates
 
 ### Kubernetes
 
 #### 👍
 
-- 👍 Helm charts are available for some key applications already.
+- 👍 Helm charts are available for some key apps already.
 - 👍 Scale all the things.
 
 #### 👎
@@ -128,33 +123,25 @@ up-and-running in the ecosystem as they don't necessarily meet our needs as a sm
 
 ## Which technologies are used?
 
-The core technologies of co-op cloud are free software tools that enjoy wide adoption across developer and system administration communities.
+The core technologies of Co-op Cloud are libre software and enjoy wide adoption across software developer communities.
 
-- [Containers](#why-do-you-use-containers)
-- [Docker compose](#why-do-you-use-docker-compose)
-- [Docker swarm](#why-do-you-use-docker-swarm)
+- [Containers](#why-containers)
+- [Compose specification](#why-docker-compose)
+- [Docker swarm](#why-docker-swarm)
+- [Abra command-line tool](https://git.autonomic.zone/coop-cloud/abra)
 
-## Who packages your applications?
+## Why containers?
 
-One of your main aims is to re-use existing good work that free software projects
-have already done.
+We use containers because so many libre software communities choose to use them! They are already writing and using Docker files and Docker-compose definitions for their development and production environments. We can directly re-use this good work for packaging and contribute back by helping maintain their in-repository files. We meet them where they are at and do not create a new packaging format or duplicate effort. Co-op cloud proposes the idea of more direct coordination between distribution methods (app packagers) and production methods (developers).
 
-## Why do you use containers?
+## Why Docker compose?
 
-We use containers because so many free software communities choose to use them.
-The upstream projects are already writing and using Docker files and Docker-compose definitions
-for their development and production environments. We can directly re-use their packaging and contribute back upstream by helping maintain their in-repository files. We meet them where the ecosystem is at and we do not create yet another new packaging format or duplicate effort. 
+We are more focused on the [compose specification](https://compose-spec.io/) as a useful open standard for specifying libre software app deployments than the [Docker compose](https://docs.docker.com/compose/) tool itself. Compose files seem to be the most accessible format for describing apps and this can be seen in the existence of tools like [Kompose](https://kompose.io/) where the compose format is used as the day-to-day developer workflow format which is then translated into more complicated formats. Docker compose is simply the de-facto community standard tooling that is being used to read and execute compose files today and we're making use of it. We are happy to see the compose specification emerging as a new open standard because that means we don't have to rely on Docker Inc. in the future - there will be more community tools available.
 
-Co-op cloud re-uses upstream free software project container based workflows through well known CI/CD automation tools and issue trackers. Coop cloud proposes the idea of more direct coordination between
-distribution methods (app packagers) and production methods (developers and system administrators).
+## Why Docker Swarm?
 
-## Why do you use Docker compose?
-
-TODO.
-
-## Why do you use Docker Swarm?
-
-TODO.
+While many have noted that "swarm is dead" it is in fact [not dead](https://www.mirantis.com/blog/mirantis-will-continue-to-support-and-develop-docker-swarm/). As detailed in the [architecture overview page](/overview/#container-orchestrator), swarm offers an approriate feature set which allows us to support zero-down time upgrades, seamless application rollbacks, automatic deploy failure handling, scaling, hybrid cloud setups and maintain a decentralised design. While the industry is bordering on a [k8s](https://kubernetes.io/) obsession and the need to [scale down](https://microk8s.io/) a tool that was fundamentally built for massive scale, we are going with swarm because it is the tool most suitable for [small technology](https://small-tech.org/). We hope to see a container orchestrator tool that is not directly linked to a for-profit company emerge soon but for now, this is what we have.
 
 ## What licensing model do you use?
+
 The Cooperative Cloud is and will always be available under [copyleft licenses](https://en.wikipedia.org/wiki/Copyleft).
