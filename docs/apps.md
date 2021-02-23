@@ -2,29 +2,29 @@
 title: Application catalogue
 ---
 
-# Applications
+## Applications
 
 | **Name**           | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
-| ------------------ | ---------- | --------- | ---------- | ----------- | --------- | ------ | ------------------ |
-| [Adapt Authoring]  | ❸🍎        | ❹💣       | ✅         | ❌          | ❌        | ❷💛    | ❌                 |
-| [CodiMD]           | ❷💛        | ❶💚       | ✅         | ❌          | ❌        | ❷💛    | ❶💚 (OAuth)        |
-| [InvoiceNinja]     | ❹💣        | ?         | ?          | ?           | ?         | ❌     | ?                  |
-| [H5ai]             | ❸🍎        | ❸🍎       | ✅         | ❌          | n/a       | ❌     | ❌                 |
-| [Keycloak]         | ❷💛        | ❶💚       | ✅         | ?           | ❸🍎       | ❷💛    | n/a                |
-| [Keyoxide]         | ❷💛        | ❶💚       | ✅         | ?           | n/a       | ❌     | n/a                |
-| [Kimai]            | ?          | ❷💛       | ?          | ?           | ?         | ❷💛    | 💣                 |
-| [Kutt]             | ❸🍎        | ❶💚       | ❌         | ❌          | ❌        | ❌     | ❌                 |
-| [Matomo]           | ❸🍎        | ❶💚       | ❌         | ❌          | ❌        | ❷💛    | ❌                 |
-| [Mailu]            | ❸🍎        | ❶💚       | ❌         | ❌          | n/a       | ❷💛    | ❌                 |
-| [Matrix (Synapse)] | ❸🍎        | ❶💚       | ❌         | ❌          | ❌        | ❌     | ❌                 |
-| [Mediawiki]        | ❷💛        | ❶💚       | ❌         | ❌          | ❶💚       | ❷💛    | ❷💛 (SAML, OAuth)  |
-| [Nextcloud]        | ❷💛        | ❶💚       | ✅         | ❌          | ❶💚       | ❷💛    | ❸🍎 (OAuth)        |
-| [PHPServerMon]     | ❷💛        | ❶💚       | ❌         | ❌          | ❶💚       | ❷💛    |
-| [Rocket.Chat]      | ❷💛        | ❶💚       | ✅         | ❌          | ❶💚       | ❷💛    | ❶💚 (OAuth)        |
-| [SelfOSS]          | ❸🍎        | ❸🍎       | ✅         | ❌          | ❌        | ❸🍎    | 💣                 |
-| [Statping]         | ❸🍎        | ❶💚       | ❌         | ❌          | ❸🍎       | ❌     | ❌                 |
-| [Wallabag]         | ❸🍎        | ❶💚       | ❌         | ❌          | ❌        | ❷💛    | ❌                 |
-| [Wordpress]        | ❶💚        | ❶💚       | ✅         | ✅          | ❶💚       | ❷💛    | ❌                 |
+| ------------------ | ---------- | --------- | -------------- | ----------- | --------- | ------ | ------------------ |
+| [Adapt Authoring]  | ❸🍎        | ❹💣       | ✅             | ❌          | ❌        | ❷💛    | ❌                 |
+| [CodiMD]           | ❷💛        | ❶💚       | ✅             | ❌          | ❌        | ❷💛    | ❶💚 (OAuth)        |
+| [InvoiceNinja]     | ❹💣        | ?         | ?              | ?           | ?         | ❌     | ?                  |
+| [H5ai]             | ❸🍎        | ❸🍎       | ✅             | ❌          | n/a       | ❌     | ❌                 |
+| [Keycloak]         | ❷💛        | ❶💚       | ✅             | ?           | ❸🍎       | ❷💛    | n/a                |
+| [Keyoxide]         | ❷💛        | ❶💚       | ✅             | ?           | n/a       | ❌     | n/a                |
+| [Kimai]            | ?          | ❷💛       | ?              | ?           | ?         | ❷💛    | 💣                 |
+| [Kutt]             | ❸🍎        | ❶💚       | ❌             | ❌          | ❌        | ❌     | ❌                 |
+| [Matomo]           | ❸🍎        | ❶💚       | ❌             | ❌          | ❌        | ❷💛    | ❌                 |
+| [Mailu]            | ❸🍎        | ❶💚       | ❌             | ❌          | n/a       | ❷💛    | ❌                 |
+| [Matrix (Synapse)] | ❸🍎        | ❶💚       | ❌             | ❌          | ❌        | ❌     | ❌                 |
+| [Mediawiki]        | ❷💛        | ❶💚       | ❌             | ❌          | ❶💚       | ❷💛    | ❷💛 (SAML, OAuth)  |
+| [Nextcloud]        | ❷💛        | ❶💚       | ✅             | ❌          | ❶💚       | ❷💛    | ❸🍎 (OAuth)        |
+| [PHPServerMon]     | ❷💛        | ❶💚       | ❌             | ❌          | ❶💚       | ❷💛    |
+| [Rocket.Chat]      | ❷💛        | ❶💚       | ✅             | ❌          | ❶💚       | ❷💛    | ❶💚 (OAuth)        |
+| [SelfOSS]          | ❸🍎        | ❸🍎       | ✅             | ❌          | ❌        | ❸🍎    | 💣                 |
+| [Statping]         | ❸🍎        | ❶💚       | ❌             | ❌          | ❸🍎       | ❌     | ❌                 |
+| [Wallabag]         | ❸🍎        | ❶💚       | ❌             | ❌          | ❌        | ❷💛    | ❌                 |
+| [Wordpress]        | ❶💚        | ❶💚       | ✅             | ✅          | ❶💚       | ❷💛    | ❌                 |
 
 [adapt authoring]: https://git.autonomic.zone/coop-cloud/adapt_authoring
 [codimd]: https://git.autonomic.zone/coop-cloud/codimd
@@ -46,7 +46,7 @@ title: Application catalogue
 [wallabag]: https://git.autonomic.zone/coop-cloud/wallabag
 [wordpress]: https://git.autonomic.zone/coop-cloud/wordpress
 
-# Developer tools
+## Developer tools
 
 | **Name**              | **Status** | **Image** | **Hltchk** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
 | --------------------- | ---------- | --------- | ---------- | ----------- | --------- | ------ | ------------------ |
@@ -64,7 +64,7 @@ title: Application catalogue
 [strapi]: https://git.autonomic.zone/coop-cloud/strapi
 [renovate bot]: https://git.autonomic.zone/coop-cloud/renovate
 
-# Utilities
+## Utilities
 
 | 🔧 **Name**            | **Status** | **Image** | **Hltchk** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
 | ---------------------- | ---------- | --------- | ---------- | ----------- | --------- | ------ | ------------------ |
@@ -82,7 +82,7 @@ title: Application catalogue
 [traefik]: https://git.autonomic.zone/coop-cloud/traefik
 [traefik forward auth]: https://git.autonomic.zone/coop-cloud/traefik-forward-auth
 
-# Graveyard
+## Graveyard
 
 | ☠ **Name** | **Status** | **Image** | **Hltchk** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
 | ---------- | ---------- | --------- | ---------- | ----------- | --------- | ------ | ------------------ |
@@ -90,9 +90,9 @@ title: Application catalogue
 
 [statuspal]: https://git.autonomic.zone/coop-cloud/statuspal
 
-# Status legend:
+## Status legend:
 
-## Overall:
+### Overall:
 
 - 🌈🌈: everything in ❶💚 + Single-Sign-On
 - ❶💚: upstream image, backups, email, healthcheck, integration testing
@@ -100,28 +100,28 @@ title: Application catalogue
 - ❸🍎: missing 3-4 items from ❶💚 or no upstream image
 - ❹💣: alpha
 
-## Image
+### Image
 
 - ❶💚: official upstream image
 - ❷💛: semi-official / actively-maintained image
 - ❸🍎: 3rd-party image
 - ❹💣: our own custom image
 
-## Email
+### Email
 
 - ❶💚: automatic (using environment variables)
 - ❷💛: mostly automatic
 - ❸🍎: manual
 - ❌: none
 
-## CI
+### CI
 
 - ❶💚: as ❷💛, plus healthcheck
 - ❷💛: auto secrets + networks
 - ❸🍎: basic deployment using `stack-ssh-deploy`, manual secrets + networks
 - ❌: none
 
-## Single-Sign-On
+### Single-Sign-On
 
 - ❶💚: automatic (using environment variables)
 - ❷💛: mostly automatic
