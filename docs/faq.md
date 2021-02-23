@@ -4,7 +4,7 @@ title: Frequently asked questions
 
 ## What is the Co-op Cloud?
 
-Co-op Cloud aims to make hosting free software applications simple for small providers. It uses the latest container technologies and innovations and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all. The project is intended for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure.
+Co-op Cloud aims to make hosting libre software applications simple for small providers. It uses the latest container technologies and innovations and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all. The project is intended for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure.
 
 ## Who is behind the project?
 
@@ -18,8 +18,8 @@ The project was started by workers at [Autonomic](https://autonomic.zone/) which
 - 👍 Extremely modular
 - 👍 Collective commons based configuration via public git repos
 - 👍 Focussed on hosting providers
-- 👍 Uses upstream packages
-- 👍 Now and always free software
+- 👍 Uses upstream published containers (no duplication on packaging)
+- 👍 Now and always libre software
 - 👍 Command line focussed
 - 👍 Horizontal and vertical scaling
 
@@ -51,11 +51,11 @@ up-and-running in the ecosystem as they don't necessarily meet our needs as a sm
 #### 👎
 
 - 👎 Moving away from open source. The core is now proprietary software.
-- 👎 Free tier has a single application limit.
+- 👎 libre tier has a single application limit.
 - 👎 Based on Docker images, not stacks, so multi-process applications (e.g. parsoid visual editor for Mediawiki) are a non-starter.
 - 👎 Difficult to extend applications.
 - 👎 Only supported on Ubuntu LTS.
-- 👎 Upstreams free software communities aren't involved in packaging.
+- 👎 Upstreams libre software communities aren't involved in packaging.
 - 👎 Limited to vertical scaling.
 - 👎 Tension between needs of hosting provider and non-technical user.
 - 👎 Bit of a [black box](https://en.wikipedia.org/wiki/Black_box).
@@ -72,7 +72,7 @@ up-and-running in the ecosystem as they don't necessarily meet our needs as a sm
 
 #### 👎
 
-- 👎 Upstream free software communities aren't involved in packaging.
+- 👎 Upstream libre software communities aren't involved in packaging.
 - 👎 Uninstalling applications leaves growing cruft.
 - 👎 Limited to vertical scaling.
 - 👎 Not intended for use by hosting providers.
