@@ -37,7 +37,7 @@ Please read our [initial project announcement post](#TODO) for more on this.
 ## What about `$alternative`?
 
 We have various technical critiques of other similar projects which are already
-up-and-running in the ecosystem as they don't necessarily meet our needs as a small tech co-op. However, the Cooperative Cloud isn't meant to be a replacement for these others projects. Here is a short overview of the pros/cons we see and how that relates to our goals here.
+up-and-running in the ecosystem as they don't necessarily meet our needs as a small tech co-op. However, the Co-op Cloud isn't meant to be a replacement for these others projects. Here is a short overview of the pros/cons we see and how that relates to our goals here.
 
 ### Cloudron
 
@@ -144,4 +144,4 @@ While many have noted that "swarm is dead" it is in fact [not dead](https://www.
 
 ## What licensing model do you use?
 
-The Cooperative Cloud is and will always be available under [copyleft licenses](https://en.wikipedia.org/wiki/Copyleft).
+The Co-op Cloud is and will always be available under [copyleft licenses](https://en.wikipedia.org/wiki/Copyleft).
