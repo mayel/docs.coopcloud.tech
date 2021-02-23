@@ -15,7 +15,12 @@ TODO.
 
 ## Which technologies are used?
 
-TODO.
+The core technologies are free software and enjoy wide adoption across free
+software developer communities.
+
+- [Containers](#why-do-you-use-containers)
+- [Docker compose](#why-do-you-use-docker-compose)
+- [Docker swarm](#why-do-you-use-docker-swarm)
 
 ## Who packages your applications?
 
@@ -23,6 +28,19 @@ One of your main aims is to re-use existing work that free software communities
 are already doing.
 
 ## Why do you use containers?
+
+We use containers because so many free software communities choose to use them!
+They are already writing and using Docker files and Docker-compose definitions
+for their development and production environments. We can directly re-use this
+good work for packaging and contribute back by helping maintain their
+in-repository files. We meet them where they are at and we do not create a new
+packaging format or duplicate effort. We tie our distribution directly into
+existing developer Coop cloud is about re-using upstream free software project
+container based workflows through well known CI/CD automation tools and issue
+trackers. Coop cloud proposes the idea of more direct coordination between
+distribution methods (app packagers) and production methods (developers).
+
+## Why do you use Docker compose?
 
 TODO.
 
