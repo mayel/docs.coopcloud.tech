@@ -2,16 +2,9 @@
 title: Frequently asked questions
 ---
 
-## What is the Cooperative Cloud?
+## What is the Co-op Cloud?
 
-The Cooperative Cloud is a project which aims to make self-hosting free
-software applications simple! It's a project which fits in alongside others
-like [Cloudron](https://www.cloudron.io/), [Yunohost](https://yunohost.org/)
-and [Freedombone](https://freedombone.net/) and others but has its own specific
-focus. The project is intended for existing small service providers and
-cooperatives already involved in hosting work who are looking for alternatives.
-
-TODO.
+The Co-op Cloud is a project which aims to make self-hosting free software applications simple! It's a project which fits in alongside others like [Cloudron](https://www.cloudron.io/), [Yunohost](https://yunohost.org/) and [Freedombone](https://freedombone.net/) and others but has its own specific focus. The project is intended for existing small service providers and cooperatives already involved in hosting work who are looking for alternatives.
 
 ## Which technologies are used?
 
@@ -42,26 +35,15 @@ distribution methods (app packagers) and production methods (developers).
 
 ## Why do you use Docker compose?
 
-TODO.
-
 ## Why do you use Docker Swarm?
-
-TODO.
 
 ## Why start another project?
 
-One of our core principles is to not re-invent the wheel. However, fitting
-needs into existing projects doesn't always work out. Some of the developers on
-this project were also once developers on the other existing projects.
-
-TODO.
+One of our core principles is to not re-invent the wheel. However, fitting needs into existing projects doesn't always work out. Some of the developers on this project were also once developers on the other existing projects.
 
 ## What about `$alternative`?
 
-We have our critiques of other similar projects which are already
-up-and-running in the ecosystem. However, the Cooperative Cloud isn't meant to
-be a replacement for these projects. Here is a short overview of the pros/cons
-we see and how that relates to our goals here.
+We have our critiques of other similar projects which are already up-and-running in the ecosystem. However, the Co-op Cloud isn't meant to be a replacement for these projects. Here is a short overview of the pros/cons we see and how that relates to our goals here.
 
 ### Cloudron
 
@@ -138,4 +120,4 @@ we see and how that relates to our goals here.
 
 ## What licensing model does the project use?
 
-The Cooperative Cloud will always be available under copyleft licenses.
+The Co-op Cloud will always be available under copyleft licenses.
