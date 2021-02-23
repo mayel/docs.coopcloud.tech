@@ -92,7 +92,7 @@ title: Application catalogue
 
 ## Status legend:
 
-### Overall:
+### Overall
 
 - 🌈🌈: everything in ❶💚 + Single-Sign-On
 - ❶💚: upstream image, backups, email, healthcheck, integration testing
