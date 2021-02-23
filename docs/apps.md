@@ -4,7 +4,7 @@ title: Application catalogue
 
 # Applications
 
-| **Name**           | **Status** | **Image** | **Hltchk** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
+| **Name**           | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
 | ------------------ | ---------- | --------- | ---------- | ----------- | --------- | ------ | ------------------ |
 | [Adapt Authoring]  | ❸🍎        | ❹💣       | ✅         | ❌          | ❌        | ❷💛    | ❌                 |
 | [CodiMD]           | ❷💛        | ❶💚       | ✅         | ❌          | ❌        | ❷💛    | ❶💚 (OAuth)        |
