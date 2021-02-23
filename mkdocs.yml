@@ -38,6 +38,12 @@ nav:
   - Application catalogue: apps.md
   - Tutorials:
       - Package your first application: package.md
+      - Use git to manage your configuration: git.md
+      - Manually load secrets into Docker swarm: secrets.md
+      - Back-up and restore an application: backup-restore.md
+      - Consider Docker security hardening practices: hardening.md
+      - Scale an application up to handle more traffic: scale.md
+      - Roll an application back to a previous version: rollback.md
   - Frequently asked questions: faq.md
   - Get in touch: contact.md
 
