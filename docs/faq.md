@@ -4,17 +4,37 @@ title: Frequently asked questions
 
 ## What is the Co-op Cloud?
 
+<<<<<<< HEAD
 Co-op Cloud aims to make hosting free software applications simple for small providers. It uses the latest container technologies and innovations and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all.
 
 The project is intended for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure.
+=======
+The Co-op Cloud is a project which aims to make self-hosting free software applications simple! It's a project which fits in alongside others like [Cloudron](https://www.cloudron.io/), [Yunohost](https://yunohost.org/) and [Freedombone](https://freedombone.net/) and others but has its own specific focus. The project is intended for existing small service providers and cooperatives already involved in hosting work who are looking for alternatives.
+
+## Which technologies?
+
+The core technologies are free software and enjoy wide adoption across free
+software developer communities.
+
+- [Containers](#why-containers)
+- [Docker compose](#why-docker-compose)
+- [Docker swarm](#why-docker-swarm)
+
+## Who packages your applications?
+>>>>>>> a87bafda8ce37f7139aaf3f598ae91d77a28332e
 
 ## Who is behind the project?
 The project was started by workers at [Autonomic](https://autonomic.zone/) which is a [workers co-operative](https://en.wikipedia.org/wiki/Worker_cooperative) providing technologies and infrastructure to empower users to make a positive impact on the world. 
 
+<<<<<<< HEAD
 We use Co-op Cloud in production amongst other systems.
+=======
+## Why containers?
+>>>>>>> a87bafda8ce37f7139aaf3f598ae91d77a28332e
 
 ## Why Co-op Cloud?
 
+<<<<<<< HEAD
 #### 👍
 - 👍 Thin "ease of use" layer on top of already standardised tooling
 - 👍 Extremely modular
@@ -35,6 +55,19 @@ We use Co-op Cloud in production amongst other systems.
 
 We have various technical critiques of other similar projects which are already
 up-and-running in the ecosystem as they don't necessarily meet our needs as a small tech co-op. However, the Cooperative Cloud isn't meant to be a replacement for these others projects. Here is a short overview of the pros/cons we see and how that relates to our goals here.
+=======
+## Why Docker Compose?
+
+## Why Docker Swarm?
+
+## Why start another project?
+
+One of our core principles is to not re-invent the wheel. However, fitting needs into existing projects doesn't always work out. Some of the developers on this project were also once developers on the other existing projects.
+
+## What about `$alternative`?
+
+We have our critiques of other similar projects which are already up-and-running in the ecosystem. However, the Co-op Cloud isn't meant to be a replacement for these projects. Here is a short overview of the pros/cons we see and how that relates to our goals here.
+>>>>>>> a87bafda8ce37f7139aaf3f598ae91d77a28332e
 
 ### Cloudron
 
@@ -149,6 +182,10 @@ TODO.
 TODO.
 
 
-# What licensing model does the project use?
+## What licensing model do you use?
 
+<<<<<<< HEAD
 The Cooperative Cloud is and will always be available under [copyleft licenses](https://en.wikipedia.org/wiki/Copyleft).
+=======
+The Co-op Cloud will always be available under copyleft licenses.
+>>>>>>> a87bafda8ce37f7139aaf3f598ae91d77a28332e
