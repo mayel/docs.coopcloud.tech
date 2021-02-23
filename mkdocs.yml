@@ -12,7 +12,7 @@ theme:
     primary: light pink
     accent: purple
 
-copyright: Copyleft 🄯 2021 The Cooperative Cloud
+copyright: Copyleft 🄯 2021 The Co-operative Cloud
 
 markdown_extensions:
   - meta
@@ -31,7 +31,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
-  - A cooperative alternative: index.md
+  - A co-operative alternative: index.md
   - Getting started guide:
       - Architecture overview: overview.md
       - Deploy your first application: deploy.md
@@ -39,6 +39,7 @@ nav:
   - Tutorials:
       - Package your first application: package.md
   - Frequently asked questions: faq.md
+  - Get in touch: contact.md
 
 plugins:
   - search
