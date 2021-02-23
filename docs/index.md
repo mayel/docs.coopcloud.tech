@@ -2,10 +2,9 @@
 title: A Cooperative Alternative
 ---
 
-Welcome to the Cooperative Cloud technical documentation! This documentation is
-primarily meant for cooperatives and other small service providers already
-doing free software hosting who are interested in the project and thinking
-about doing some early-adopter testing.
+![co-op cloud logo](/docs/img/coop_cloud_logo_pink.png)
+
+Welcome to the Cooperative Cloud technical documentation! This documentation is primarily meant for cooperatives and other small service providers already doing free software hosting who are interested in the project and thinking about doing some early-adopter testing.
 
 - If you're new to the project, then head over to the [getting started
   guide](/overview/)
