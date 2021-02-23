@@ -11,9 +11,9 @@ The Co-op Cloud is a project which aims to make self-hosting free software appli
 The core technologies are free software and enjoy wide adoption across free
 software developer communities.
 
-- [Containers](#why-do-you-use-containers)
-- [Docker compose](#why-do-you-use-docker-compose)
-- [Docker swarm](#why-do-you-use-docker-swarm)
+- [Containers](#why-containers)
+- [Docker compose](#why-docker-compose)
+- [Docker swarm](#why-docker-swarm)
 
 ## Who packages your applications?
 
