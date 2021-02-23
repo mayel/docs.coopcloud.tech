@@ -15,7 +15,7 @@ Applications that you may already use in your daily life: [Nextcloud], [Jitsi], 
 
 The communities who develop these softwares also publish them using containers. For example, here is the [Nextcloud hub.docker.com account] which allows end-users to quickly deploy a new Nextcloud instance.
 
-Learn more about why we use containers [in the FAQ section](faq/#why-do-you-use-containers).
+Learn more about why we use containers [in the FAQ section](faq/#why-containers).
 
 [nextcloud]: https://nextcloud.com
 [jitsi]: https://jitsi.org
@@ -33,7 +33,7 @@ Therefore, the Co-op cloud proposes a packaing format which describes the entire
 
 [Each application] that the Co-op cloud provides is described using the compose specification and makes use of the upstream project published container.
 
-Learn more about why we use Docker compose [in the FAQ section](faq/#why-do-you-use-docker-compose).
+Learn more about why we use Docker compose [in the FAQ section](faq/#why-docker-compose).
 
 [standards based compose specification]: https://compose-spec.io
 [docker compose]: https://docs.docker.com/compose/
@@ -45,7 +45,7 @@ Once we have our application packaged, we need a deployment environment. Product
 
 The Co-op cloud makes use of [Docker swarm] as a deployment environment. It offers an approriate feature set which allows us to support zero-down time upgrades, seamless application rollbacks, automatic deploy failure handling, scaling, hybrid cloud setups and maintain a decentralised design.
 
-Learn more about why we use Docker swarm [in the FAQ section](faq/#why-do-you-use-docker-swarm).
+Learn more about why we use Docker swarm [in the FAQ section](faq/#why-docker-swarm).
 
 [docker swarm]: https://docs.docker.com/engine/swarm/
 

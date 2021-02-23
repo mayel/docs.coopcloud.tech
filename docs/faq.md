@@ -6,7 +6,7 @@ title: Frequently asked questions
 
 The Co-op Cloud is a project which aims to make self-hosting free software applications simple! It's a project which fits in alongside others like [Cloudron](https://www.cloudron.io/), [Yunohost](https://yunohost.org/) and [Freedombone](https://freedombone.net/) and others but has its own specific focus. The project is intended for existing small service providers and cooperatives already involved in hosting work who are looking for alternatives.
 
-## Which technologies are used?
+## Which technologies?
 
 The core technologies are free software and enjoy wide adoption across free
 software developer communities.
@@ -20,7 +20,7 @@ software developer communities.
 One of your main aims is to re-use existing work that free software communities
 are already doing.
 
-## Why do you use containers?
+## Why containers?
 
 We use containers because so many free software communities choose to use them!
 They are already writing and using Docker files and Docker-compose definitions
@@ -33,9 +33,9 @@ container based workflows through well known CI/CD automation tools and issue
 trackers. Coop cloud proposes the idea of more direct coordination between
 distribution methods (app packagers) and production methods (developers).
 
-## Why do you use Docker compose?
+## Why Docker Compose?
 
-## Why do you use Docker Swarm?
+## Why Docker Swarm?
 
 ## Why start another project?
 
@@ -118,6 +118,6 @@ We have our critiques of other similar projects which are already up-and-running
 - 👎 Array of sysadmin skills required to install applications
 - 👎 Hard to share configurations into the commons
 
-## What licensing model does the project use?
+## What licensing model do you use?
 
 The Co-op Cloud will always be available under copyleft licenses.
