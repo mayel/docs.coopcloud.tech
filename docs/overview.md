@@ -29,7 +29,7 @@ Learn more about why we use containers [in the FAQ section](faq/#why-containers)
 
 The work required to take a new instance of an application and make it production ready is still too time intensive and often involves a duplication of effort. Each service provider needs to deal with the same problems: stable versioning, backup plan, secret management, upgrade plan, monitoring and the list goes on.
 
-Therefore, the Co-op cloud proposes a packaing format which describes the entire production state of the application in a single place. This format is based on the [standards based compose specification] which is most commonly used by the [Docker compose] tool.
+Therefore, the Co-op cloud proposes a packaging format which describes the entire production state of the application in a single place. This format is based on the [standards based compose specification] which is most commonly used by the [Docker compose] tool.
 
 [Each application] that the Co-op cloud provides is described using the compose specification and makes use of the upstream project published container.
 
