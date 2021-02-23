@@ -8,8 +8,7 @@ Welcome to the Co-op Cloud technical documentation. This documentation is primar
 
 ## Getting started
 
-If you're new to the project, then head over to the [getting started
-guide](/overview/).
+If you're new to the project, then head over to the [getting started guide](/overview/).
 
 ## Apps
 
@@ -17,11 +16,8 @@ If you want to see what applications are already available, then check out the [
 
 ## FAQ
 
-If you're trying to understand more about the project please see [the
-FAQ](/faq/).
+If you're trying to understand more about the project, then please see [the FAQ](/faq/).
 
 ## Important Note
 
-This project is still alpha quality software. Please take that into consideration before using in production.
-
-We're working hard to make Co-op Cloud stable. In the meantime, this is a good time to help us out with initial testing, feedback and ideas.
+This project is still alpha quality software. Please take that into consideration before using in production. We're working hard to make Co-op Cloud stable. In the meantime, this is a good time to help us out with initial testing, feedback, ideas or join in with development.
