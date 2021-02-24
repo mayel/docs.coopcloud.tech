@@ -57,7 +57,7 @@ Abra aims at providing a simple command-line interface for managing your own co-
 
 [abra]: https://git.autonomic.zone/coop-cloud/abra
 
-## Moving forward
+## Next steps
 
 Now that you've got an overview, it is time to [deploy your first application].
 
