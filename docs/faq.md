@@ -32,7 +32,7 @@ The project was started by workers at [Autonomic](https://autonomic.zone/) which
 
 ## Why start another project?
 
-Please read our [initial project announcement post](#TODO) for more on this.
+Please read our [initial project announcement post](https://autonomic.zone/blog/coop-cloud/) for more on this.
 
 ## What about `$alternative`?
 
