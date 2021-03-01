@@ -53,7 +53,7 @@ Learn more about why we use Docker swarm [in the FAQ section](/faq/#why-docker-s
 
 Finally, with an application and an application environment, we need a tool to read that package format and actually deploy it to the environment. For this, we have developed and published the [abra] command-line tool.
 
-Abra aims at providing a simple command-line interface for managing your own co-operative cloud. You can bootstrap machines with the required tools, create new applications, deploy them, back them up, restore them and so on.
+Abra aims at providing a simple command-line interface for managing your own co-op cloud. You can bootstrap machines with the required tools, create new applications, deploy them, back them up, restore them and so on.
 
 [abra]: https://git.autonomic.zone/coop-cloud/abra
 
