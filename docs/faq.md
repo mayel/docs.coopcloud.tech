@@ -69,6 +69,7 @@ up-and-running in the ecosystem as they don't necessarily meet our needs as a sm
 - 👍 Awesome backup / deploy / restore continuous integration testing.
 - 👍 Supports hosting applications in subdirectories as well as subdomains.
 - 👍 Doesn't require a public-facing IP.
+- 👍 Supports system-wide mutualisation of resources for apps (e.g. sharing databases by default)
 
 #### 👎
 
