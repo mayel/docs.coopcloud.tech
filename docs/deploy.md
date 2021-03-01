@@ -90,20 +90,20 @@ $ abra app new --server example.com --domain traefik.example.com traefik
 You will want to take a look at your generated configuration and tweak the `LETS_ENCRYPT_EMAIL` value:
 
 ```bash
-$ abra app traefik.example.zone config
+$ abra app traefik.example.com config
 ```
 
 This is the required environment variables that you can configure and are injected into the app configuration when deployed.
 
 ```
-$ abra app traefik.example.zone deploy
+$ abra app traefik.example.com deploy
 ```
 
 We can then check that everything came up as expected.
 
 ```bash
-$ abra app traefik.example.zone ps   # status check
-$ abra app traefik.example.zone logs # logs watch
+$ abra app traefik.example.com ps   # status check
+$ abra app traefik.example.com logs # logs watch
 ```
 
 ## Deploy Nextcloud
@@ -132,14 +132,14 @@ $ abra app cloud.example.com secret generate --all
 Then we can deploy the Nextcloud.
 
 ```bash
-$ abra app cloud.example.zone deploy
+$ abra app cloud.example.com deploy
 ```
 
 And once again, we can watch to see that things come up correctly.
 
 ```bash
-$ abra app nextcloud.example.zone ps   # status check
-$ abra app nextcloud.example.zone logs # logs watch
+$ abra app nextcloud.example.com ps   # status check
+$ abra app nextcloud.example.com logs # logs watch
 ```
 
 !!! note
@@ -147,7 +147,7 @@ $ abra app nextcloud.example.zone logs # logs watch
     Since Nextcloud takes some time to come up live, you can run the `ps` command under `watch` like so.
 
     ```bash
-    $ watch abra app nextcloud.example.zone ps
+    $ watch abra app nextcloud.example.com ps
     ```
 
     And you can wait until you see that all containers have the "Running" state.
