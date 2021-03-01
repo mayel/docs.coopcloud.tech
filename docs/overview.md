@@ -45,7 +45,7 @@ Once we have our application packaged, we need a deployment environment. Product
 
 The Co-op cloud makes use of [Docker swarm] as a deployment environment. It offers an approriate feature set which allows us to support zero-down time upgrades, seamless application rollbacks, automatic deploy failure handling, scaling, hybrid cloud setups and maintain a decentralised design.
 
-Learn more about why we use Docker swarm [in the FAQ section](faq/#why-docker-swarm).
+Learn more about why we use Docker swarm [in the FAQ section](/faq/#why-docker-swarm).
 
 [docker swarm]: https://docs.docker.com/engine/swarm/
 
