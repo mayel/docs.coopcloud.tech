@@ -122,7 +122,12 @@ And we need to generate secrets for the app: database connection password, root 
 $ abra app cloud.example.com secret generate --all
 ```
 
-Take care, these secrets are only shown once on the terminal so make sure to take note of them! Abra makes use of the [Docker secrets](https://docs.docker.com/engine/swarm/secrets/) mechanism to ship these secrets securely to the server and store them as encrypted data.
+!!! warning
+
+    Take care, these secrets are only shown once on the terminal so make sure
+    to take note of them! Abra makes use of the [Docker
+    secrets](https://docs.docker.com/engine/swarm/secrets/) mechanism to ship
+    these secrets securely to the server and store them as encrypted data.
 
 Then we can deploy the Nextcloud.
 
