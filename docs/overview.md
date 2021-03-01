@@ -15,7 +15,7 @@ Applications that you may already use in your daily life: [Nextcloud], [Jitsi], 
 
 The communities who develop these softwares also publish them using containers. For example, here is the [Nextcloud hub.docker.com account] which allows end-users to quickly deploy a new Nextcloud instance.
 
-Learn more about why we use containers [in the FAQ section](faq/#why-containers).
+Learn more about why we use containers [in the FAQ section](/faq/#why-containers).
 
 [nextcloud]: https://nextcloud.com
 [jitsi]: https://jitsi.org
