@@ -61,7 +61,7 @@ Now you can connect `abra` with your new server.
 $ abra server add example.com
 ```
 
-Where `example.com` is replaced with your identifier for your server DNS.
+Where `example.com` is replaced with your server DNS name.
 
 `abra server add` accepts also a `<user>` and `<port>` arguments for your custom SSH connection details. What is happening here is that you are using the underlying SSH machinery to make a secure connection to the server installed Docker daemon. This allows `abra` to run remote deployments from your local development machine.
 
