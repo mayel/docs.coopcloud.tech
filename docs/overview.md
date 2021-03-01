@@ -33,7 +33,7 @@ Therefore, the Co-op cloud proposes a packaging format which describes the entir
 
 [Each application] that the Co-op cloud provides is described using the compose specification and makes use of the upstream project published container.
 
-Learn more about why we use Docker compose [in the FAQ section](faq/#why-docker-compose).
+Learn more about why we use Docker compose [in the FAQ section](/faq/#why-docker-compose).
 
 [standards based compose specification]: https://compose-spec.io
 [docker compose]: https://docs.docker.com/compose/
