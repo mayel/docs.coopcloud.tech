@@ -24,7 +24,7 @@ Where `116.203.211.204` can be replaced with the IP address of your server.
 
 On your server, you'll want to install [Docker](https://www.docker.com/). This can be done by following the [install documentation](https://docs.docker.com/engine/install/).
 
-On a Debian system, that can be done like so.
+On a [Debian system](https://docs.docker.com/engine/install/debian/), that can be done like so.
 
 ```bash
 $ sudo apt-get remove docker docker-engine docker.io containerd runc
