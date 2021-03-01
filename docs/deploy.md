@@ -71,7 +71,7 @@ Where `example.com` is replaced with your server DNS name.
     installed Docker daemon. This allows `abra` to run remote deployments from
     your local development machine.
 
-Once you've added the sever, you can initialise the new single-host swarm.
+Once you've added the sever, you can initialise the [new single-host swarm](https://docs.docker.com/engine/swarm/key-concepts/).
 
 ```bash
 $ abra server example.com init
