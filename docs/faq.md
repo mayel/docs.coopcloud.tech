@@ -145,3 +145,7 @@ While many have noted that "swarm is dead" it is in fact [not dead](https://www.
 ## What licensing model do you use?
 
 The Co-op Cloud is and will always be available under [copyleft licenses](https://en.wikipedia.org/wiki/Copyleft).
+
+## Isn't running everything in container inefficient?
+
+It is true that if you install 3 applications and each one requires a MySQL database, then you will have 3 installations of MySQL on your system, running in containers. Systems like [YunoHost](/faq/#yunohost) mutualise every part of the system for maximum resource efficiency - if there is a MySQL instance available on the system, then just make a new database there and share the MySQL instance instead of creating more. However, as we see it, this creates a tight coupling between applications on the database level - running a migration on one application where you need to turn the database off takes down the other applications. It's a balance, of course. In this project, we think that running multiple databases and maintaining more strict application isolation is worth the hit in resource efficiency. It is easier to maintain and migrate going forward in relation to other applications and problems with apps typically have a smaller problem space - you know another app is not interfering with it because there is no interdependency. It can also pay off when dealing with GDPR related issues and the need to have more stricter data layer separation.

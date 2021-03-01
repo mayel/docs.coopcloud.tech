@@ -9,7 +9,7 @@ In order to deploy an application you need two things:
 
 ## Create your server
 
-Whether you are self-hosting or using a corporate cloud, Co-op Cloud has itself near zero system requirements. You only need to worry about the system resource usage of your apps and the overhead of running containers with the docker runtime (often negligible). We will deploy a new Nextcloud instance in this guide, so you will only need 1GB of RAM according to [their documentation](https://docs.nextcloud.com/server/latest/admin_manual/installation/system_requirements.html).
+Co-op Cloud has itself near zero system requirements. You only need to worry about the system resource usage of your apps and the overhead of running containers with the docker runtime (often negligible. If you want to know more, see [this FAQ entry](/faq/#isnt-running-everything-in-container-really-inefficient)). We will deploy a new Nextcloud instance in this guide, so you will only need 1GB of RAM according to [their documentation](https://docs.nextcloud.com/server/latest/admin_manual/installation/system_requirements.html).
 
 ## Wire up your DNS
 
@@ -18,7 +18,7 @@ Typically, you'll need two A records, one to point to the VPS itself and another
     @  1800 IN A 116.203.211.204
     *. 1800 IN A 116.203.211.204
 
-Where `116.203.211.204` can be replaced as the IP address of your server.
+Where `116.203.211.204` can be replaced with the IP address of your server.
 
 ## Install server prerequisites
 
