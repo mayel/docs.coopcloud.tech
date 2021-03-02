@@ -4,91 +4,64 @@ title: Application catalogue
 
 ## Applications
 
-| **Name**           | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
-| ------------------ | ---------- | --------- | -------------- | ----------- | --------- | ------ | ------------------ |
-| [Adapt Authoring]  | ❸🍎        | ❹💣       | ✅             | ❌          | ❌        | ❷💛    | ❌                 |
-| [CodiMD]           | ❷💛        | ❶💚       | ✅             | ❌          | ❌        | ❷💛    | ❶💚 (OAuth)        |
-| [InvoiceNinja]     | ❹💣        | ?         | ?              | ?           | ?         | ❌     | ?                  |
-| [H5ai]             | ❸🍎        | ❸🍎       | ✅             | ❌          | n/a       | ❌     | ❌                 |
-| [Keycloak]         | ❷💛        | ❶💚       | ✅             | ?           | ❸🍎       | ❷💛    | n/a                |
-| [Keyoxide]         | ❷💛        | ❶💚       | ✅             | ?           | n/a       | ❌     | n/a                |
-| [Kimai]            | ?          | ❷💛       | ?              | ?           | ?         | ❷💛    | 💣                 |
-| [Kutt]             | ❸🍎        | ❶💚       | ❌             | ❌          | ❌        | ❌     | ❌                 |
-| [Matomo]           | ❸🍎        | ❶💚       | ❌             | ❌          | ❌        | ❷💛    | ❌                 |
-| [Mailu]            | ❸🍎        | ❶💚       | ❌             | ❌          | n/a       | ❷💛    | ❌                 |
-| [Matrix (Synapse)] | ❸🍎        | ❶💚       | ❌             | ❌          | ❌        | ❌     | ❌                 |
-| [Mediawiki]        | ❷💛        | ❶💚       | ❌             | ❌          | ❶💚       | ❷💛    | ❷💛 (SAML, OAuth)  |
-| [Nextcloud]        | ❷💛        | ❶💚       | ✅             | ❌          | ❶💚       | ❷💛    | ❸🍎 (OAuth)        |
-| [PHPServerMon]     | ❷💛        | ❶💚       | ❌             | ❌          | ❶💚       | ❷💛    |
-| [Rocket.Chat]      | ❷💛        | ❶💚       | ✅             | ❌          | ❶💚       | ❷💛    | ❶💚 (OAuth)        |
-| [SelfOSS]          | ❸🍎        | ❸🍎       | ✅             | ❌          | ❌        | ❸🍎    | 💣                 |
-| [Statping]         | ❸🍎        | ❶💚       | ❌             | ❌          | ❸🍎       | ❌     | ❌                 |
-| [Wallabag]         | ❸🍎        | ❶💚       | ❌             | ❌          | ❌        | ❷💛    | ❌                 |
-| [Wordpress]        | ❶💚        | ❶💚       | ✅             | ✅          | ❶💚       | ❷💛    | ❌                 |
-
-[adapt authoring]: https://git.autonomic.zone/coop-cloud/adapt_authoring
-[codimd]: https://git.autonomic.zone/coop-cloud/codimd
-[invoiceninja]: https://git.autonomic.zone/coop-cloud/invoiceninja
-[h5ai]: https://git.autonomic.zone/coop-cloud/h5ai
-[keycloak]: https://git.autonomic.zone/coop-cloud/keycloak
-[keyoxide]: https://git.autonomic.zone/coop-cloud/keyoxide
-[kimai]: https://git.autonomic.zone/coop-cloud/kimai
-[kutt]: https://git.autonomic.zone/coop-cloud/kutt
-[matomo]: https://git.autonomic.zone/coop-cloud/matomo
-[mailu]: https://git.autonomic.zone/coop-cloud/mailu
-[matrix (synapse)]: https://git.autonomic.zone/coop-cloud/matrix-synapse
-[mediawiki]: https://git.autonomic.zone/coop-cloud/mediawiki
-[nextcloud]: https://git.autonomic.zone/coop-cloud/nextcloud
-[phpservermon]: https://git.autonomic.zone/coop-cloud/phpservermon
-[rocket.chat]: https://git.autonomic.zone/coop-cloud/rocketchat
-[selfoss]: https://git.autonomic.zone/coop-cloud/selfoss
-[statping]: https://git.autonomic.zone/coop-cloud/statping
-[wallabag]: https://git.autonomic.zone/coop-cloud/wallabag
-[wordpress]: https://git.autonomic.zone/coop-cloud/wordpress
+| **Name** | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Adapt Authoring Tool](https://git.autonomic.zone/coop-cloud/adaptauthoring) | ❸🍎 | ❹💣 | ✅ | ❌ | ❌ | ❷💛 | ❌ |
+| [CiviCRM-Backdrop](https://git.autonomic.zone/coop-cloud/civicrm-backdrop) | ❹💣 | ? | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [CodiMD](https://git.autonomic.zone/coop-cloud/codimd) | ❷💛 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❶💚 (OAuth) |
+| [Custom HTML](https://git.autonomic.zone/coop-cloud/custom-html) | ❷💛 | ❶💚 | ❌ | ❌ | ⛔ | ❷💛 | ❌ |
+| [Filestash](https://git.autonomic.zone/coop-cloud/filestash) | ❹💣 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [H5ai](https://git.autonomic.zone/coop-cloud/h5ai) | ❸🍎 | ❸🍎 | ✅ | ❌ | ⛔ | ❌ | ❌ |
+| [Invoiceninja](https://git.autonomic.zone/coop-cloud/invoiceninja) | ❹💣 | ❶💚 | ❌ | ❌ | ? | ❌ | ? |
+| [keycloak](https://git.autonomic.zone/coop-cloud/keycloak) | ❷💛 | ❶💚 | ✅ | ? | ❸🍎 | ❷💛 | ⛔ |
+| [Keyoxide](https://git.autonomic.zone/coop-cloud/keyoxide) | ❷💛 | ❶💚 | ✅ | ❌ | ⛔ | ❷💛 | ⛔ |
+| [Kimai](https://git.autonomic.zone/coop-cloud/kimai) | ? | ❷💛 | ❌ | ❌ | ❌ | ❷💛 | ❌ |
+| [Kutt](https://git.autonomic.zone/coop-cloud/kutt) | ❸🍎 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [Mailu](https://git.autonomic.zone/coop-cloud/mailu) | ❸🍎 | ❶💚 | ❌ | ❌ | ⛔ | ❌ | ❌ |
+| [Matomo](https://git.autonomic.zone/coop-cloud/matomo) | ❸🍎 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❌ |
+| [Matrix (Synapse)](https://git.autonomic.zone/coop-cloud/matrix-synapse) | ❹💣 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❌ |
+| [Mediawiki](https://git.autonomic.zone/coop-cloud/mediawiki) | ❸🍎 | ❶💚 | ❌ | ✅ | ❶💚 | ❷💛 | ❷💛 (OAuth, SAML) |
+| [Nextcloud](https://git.autonomic.zone/coop-cloud/nextcloud) | ❷💛 | ❶💚 | ✅ | ❌ | ❶💚 | ❷💛 | ❸🍎 (OAuth) |
+| [Pelican](https://git.autonomic.zone/coop-cloud/pelican) | ❷💛 | ❹💣 | ❌ | ❌ | ⛔ | ❷💛 | ❌ |
+| [Rocketchat](https://git.autonomic.zone/coop-cloud/rocketchat) | ❷💛 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❶💚 (OAuth) |
+| [Selfoss](https://git.autonomic.zone/coop-cloud/selfoss) | ❸🍎 | ❸🍎 | ✅ | ❌ | ❌ | ❸🍎 | ⛔ |
+| [Statping](https://git.autonomic.zone/coop-cloud/statping) | ❸🍎 | ❶💚 | ❌ | ❌ | ❸🍎 | ❌ | ❌ |
+| [Wallabag](https://git.autonomic.zone/coop-cloud/wallabag) | ❸🍎 | ❶💚 | ❌ | ❌ | ❌ | ❷💛 | ❌ |
+| [Wordpress](https://git.autonomic.zone/coop-cloud/wordpress) | ❶💚 | ❶💚 | ✅ | ✅ | ❶💚 | ❷💛 | ❌ |
 
 ## Developer tools
 
-| **Name**              | **Status** | **Image** | **Hltchk** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
-| --------------------- | ---------- | --------- | ---------- | ----------- | --------- | ------ | ------------------ |
-| [Distribution]        | ?          | ❶💚       | ?          | ?           | ?         | ?      | n/a                |
-| [Drone docker runner] | ?          | ❶💚       | ?          | ?           | ?         | ?      | n/a                |
-| [Drone]               | ?          | ❶💚       | ❌         | ?           | ?         | ❷💛    | ❶💚 (OAuth)        |
-| [Gitea]               | ?          | ❶💚       | ✅         | ?           | ?         | ❌     | ? (OAuth)          |
-| [Strapi]              | ❸🍎        | ❶💚       | ❌         | ❌          | ❌        | ❷💛    | ❌                 |
-| [Renovate bot]        | ?          | ❶💚       | ?          | ?           | ?         | ?      | ?                  |
-
-[distribution]: https://git.autonomic.zone/coop-cloud/distribution
-[drone docker runner]: https://git.autonomic.zone/coop-cloud/drone-docker-runner
-[drone]: https://git.autonomic.zone/coop-cloud/drone
-[gitea]: https://git.autonomic.zone/coop-cloud/gitea
-[strapi]: https://git.autonomic.zone/coop-cloud/strapi
-[renovate bot]: https://git.autonomic.zone/coop-cloud/renovate
+| **Name** | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [distribution](https://git.autonomic.zone/coop-cloud/distribution) | ❹💣 | ❶💚 | ? | ? | ? | ? | ? |
+| [drone-docker-runner](https://git.autonomic.zone/coop-cloud/drone-docker-runner) | ❹💣 | ❶💚 | ? | ? | ? | ? | ? |
+| [Drone](https://git.autonomic.zone/coop-cloud/drone) | ? | ❶💚 | ✅ | ? | ? | ❷💛 | ❶💚 (OAuth) |
+| [Gitea](https://git.autonomic.zone/coop-cloud/gitea) | ❷💛 | ❶💚 | ✅ | ❌ | ? | ❷💛 | ❶💚 (OAuth) |
+| [Renovate Bot](https://git.autonomic.zone/coop-cloud/renovate-bot) | ? | ❶💚 | ❌ | ? | ? | ❷💛 | ? |
+| [Strapi](https://git.autonomic.zone/coop-cloud/strapi) | ❸🍎 | ❶💚 | ❌ | ❌ | ❌ | ❷💛 | ❌ |
 
 ## Utilities
 
-| 🔧 **Name**            | **Status** | **Image** | **Hltchk** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
-| ---------------------- | ---------- | --------- | ---------- | ----------- | --------- | ------ | ------------------ |
-| [Portainer]            | ?          | ❶💚       | ❌         | ?           | ?         | ❌     | ?                  |
-| [Postfix relay]        | ❸🍎        | ❸🍎       | ❌         | n/a         | ❌        | n/a    | ❷💛                | n/a |
-| [Swarm cronjob]        | ?          | ❶💚       | ?          | ?           | ?         | ?      | ?                  |
-| [Swarmpit]             | ❷💛        | ❶💚       | ✅         | ❌          | ❌        | ❷💛    | 💣                 |
-| [Traefik]              | ❷💛        | ❶💚       | ✅         | ?           | n/a       | ❸🍎    | ? Keycloak         |
-| [Traefik forward auth] | ?          | ❶💚       | ?          | ?           | ?         | ?      |
-
-[portainer]: https://git.autonomic.zone/coop-cloud/portainer
-[postfix relay]: https://git.autonomic.zone/coop-cloud/postfix-relay
-[swarm cronjob]: https://git.autonomic.zone/coop-cloud/swarm-cronjob
-[swarmpit]: https://git.autonomic.zone/coop-cloud/swarmpit
-[traefik]: https://git.autonomic.zone/coop-cloud/traefik
-[traefik forward auth]: https://git.autonomic.zone/coop-cloud/traefik-forward-auth
+| **Name** | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [portainer](https://git.autonomic.zone/coop-cloud/portainer) | ? | ❶💚 | ❌ | ? | ? | ❷💛 | ❌ |
+| [Postfix-Relay](https://git.autonomic.zone/coop-cloud/postfix-relay) | ❷💛 | ❶💚 | ✅ | ❌ | ⛔ | ❷💛 | ⛔ |
+| [swarm-cronjob](https://git.autonomic.zone/coop-cloud/swarm-cronjob) | ? | ❶💚 | ? | ? | ? | ? | ? |
+| [Swarmpit](https://git.autonomic.zone/coop-cloud/swarmpit) | ❷💛 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ⛔ |
+| [traefik-forward-auth](https://git.autonomic.zone/coop-cloud/traefik-forward-auth) | ? | ❶💚 | ? | ? | ? | ? | ? |
+| [Traefik](https://git.autonomic.zone/coop-cloud/traefik) | ? | ❶💚 | ✅ | ❌ | ⛔ | ❷💛 | ? (Keycloak) |
 
 ## Graveyard
 
-| ☠ **Name** | **Status** | **Image** | **Hltchk** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
-| ---------- | ---------- | --------- | ---------- | ----------- | --------- | ------ | ------------------ |
-| Statuspal  |
+_(We're not running these apps ourselves, and most of them probably need further
+packaging work to be used in production)_
 
-[statuspal]: https://git.autonomic.zone/coop-cloud/statuspal
+| **Name** | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Filerun](https://git.autonomic.zone/coop-cloud/filerun) | ❹💣 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [PHPServerMon](https://git.autonomic.zone/coop-cloud/phpservermon) | ❹💣 | ❸🍎 | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [Projectsend](https://git.autonomic.zone/coop-cloud/projectsend) | ❹💣 | ❸🍎 | ✅ | ❌ | ❌ | ❌ | ❌ |
+| [Statuspal](https://git.autonomic.zone/coop-cloud/statuspal) | ❹💣 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 ## Status legend
 
