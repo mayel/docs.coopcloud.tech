@@ -36,9 +36,9 @@ $ sudo apt-get update
 $ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
-## Bootstrap abra
+## Bootstrap `abra`
 
-Once your DNS and docker daemon are up, you can install [abra](https://git.autonomic.zone/autonomic-cooperative/abra) locally on your developer machine and hook it up to your server.
+Once your DNS and docker daemon are up, you can install [`abra`](https://git.autonomic.zone/autonomic-cooperative/abra) locally on your developer machine and hook it up to your server.
 
 Firstly, install `abra` locally.
 
@@ -129,7 +129,7 @@ $ abra app nextcloud secret generate --all
 !!! warning
 
     Take care, these secrets are only shown once on the terminal so make sure
-    to take note of them! Abra makes use of the [Docker
+    to take note of them! `abra` makes use of the [Docker
     secrets](https://docs.docker.com/engine/swarm/secrets/) mechanism to ship
     these secrets securely to the server and store them as encrypted data.
 
