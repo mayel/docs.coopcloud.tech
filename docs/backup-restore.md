@@ -27,12 +27,14 @@ or just the database:
 abra app wordpress_blog_example_com backup db
 ```
 
-!!! warnings
-Not all types of apps know how to do backups yet -- if you see a message like
-`ERROR: 'nextcloud' doesn't know how to do app backups`, then extra code is
-needed in that app's `abra.sh` -- you might be able to add this yourself based
-on [`coop-cloud/wordpress` `abra.sh`][wordpress_abra.sh], otherwise please
-open a new issue (in this case for [`coop-cloud/nextcloud`][nextcloud]).
+!!! warning
+
+    Not all types of apps know how to do backups yet -- if you see a message
+    like `ERROR: 'nextcloud' doesn't know how to do app backups`, then extra
+    code is needed in that app's `abra.sh` -- you might be able to add this
+    yourself based on [`coop-cloud/wordpress` `abra.sh`][wordpress_abra.sh],
+    otherwise please open a new issue (in this case for
+    [`coop-cloud/nextcloud`][nextcloud]).
 
 ## Restore
 
