@@ -18,4 +18,5 @@ Some handy links in the meantime:
     We do not have public logins enabled on the Autonomic
     [git.autonomic.zone](https://git.autonomic.zone) Gitea instance because we
     haven't needed to open it up yet for public contributions. However, we want
-    to get around to that soon.
+    to get around to that soon. Please nag us via our [public
+    channels](/contact/) and we'll get to it.

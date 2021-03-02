@@ -45,6 +45,7 @@ nav:
       - Scale an application up to handle more traffic: scale.md
       - Roll an application back to a previous version: rollback.md
   - Frequently asked questions: faq.md
+  - Roadmap: roadmap.md
   - Contributing guide: contribute.md
   - Get in touch: contact.md
 
