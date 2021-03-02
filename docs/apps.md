@@ -2,6 +2,14 @@
 title: Application catalogue
 ---
 
+<!-- DO NOT EDIT TABLES MANUALLY
+
+App information is auto-generated with abra/app-catalogue.sh:
+  https://git.autonomic.zone/coop-cloud/abra/src/branch/main/app-catalogue.sh
+
+Manual edits will be over-written the next time that script is run.
+-->
+
 ## Applications
 
 | **Name** | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
@@ -19,11 +27,11 @@ title: Application catalogue
 | [Kutt](https://git.autonomic.zone/coop-cloud/kutt) | ❸🍎 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [Mailu](https://git.autonomic.zone/coop-cloud/mailu) | ❸🍎 | ❶💚 | ❌ | ❌ | ⛔ | ❌ | ❌ |
 | [Matomo](https://git.autonomic.zone/coop-cloud/matomo) | ❸🍎 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❌ |
-| [Matrix (Synapse)](https://git.autonomic.zone/coop-cloud/matrix-synapse) | ❹💣 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❌ |
+| [Matrix (Synapse)](https://git.autonomic.zone/coop-cloud/matrix-synapse) | ❹💣 | ❶💚 | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [Mediawiki](https://git.autonomic.zone/coop-cloud/mediawiki) | ❸🍎 | ❶💚 | ❌ | ✅ | ❶💚 | ❷💛 | ❷💛 (OAuth, SAML) |
 | [Nextcloud](https://git.autonomic.zone/coop-cloud/nextcloud) | ❷💛 | ❶💚 | ✅ | ❌ | ❶💚 | ❷💛 | ❸🍎 (OAuth) |
 | [Pelican](https://git.autonomic.zone/coop-cloud/pelican) | ❷💛 | ❹💣 | ❌ | ❌ | ⛔ | ❷💛 | ❌ |
-| [Rocketchat](https://git.autonomic.zone/coop-cloud/rocketchat) | ❷💛 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❶💚 (OAuth) |
+| [Rocket.chat](https://git.autonomic.zone/coop-cloud/rocketchat) | ❷💛 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❶💚 (OAuth) |
 | [Selfoss](https://git.autonomic.zone/coop-cloud/selfoss) | ❸🍎 | ❸🍎 | ✅ | ❌ | ❌ | ❸🍎 | ⛔ |
 | [Statping](https://git.autonomic.zone/coop-cloud/statping) | ❸🍎 | ❶💚 | ❌ | ❌ | ❸🍎 | ❌ | ❌ |
 | [Wallabag](https://git.autonomic.zone/coop-cloud/wallabag) | ❸🍎 | ❶💚 | ❌ | ❌ | ❌ | ❷💛 | ❌ |
