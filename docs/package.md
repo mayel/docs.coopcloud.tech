@@ -36,10 +36,8 @@ TYPE=matomo
 DOMAIN=matomo.example.com
 LETS_ENCRYPT_ENV=production
 
-DB_PASSWORD_VERSION=v1
-DB_ROOT_PASSWORD_VERSION=v1
+SECRET_DB_PASSWORD_VERSION=v1
+SECRET_DB_ROOT_PASSWORD_VERSION=v1
 ```
-
-TODO.
 
 Then, open the `DOMAIN` you configured (you might need to wait a while for Traefik to generate SSL certificates) to finish the set-up. Luckily, this container is (mostly) configurable via environment variables -- if we want to auto-generate the configuration we can use a `config` and / or a custom `entrypoint` (see [`coop-cloud/mediawiki`](https://git.autonomic.zone/coop-cloud/mediawiki) for examples of both).
