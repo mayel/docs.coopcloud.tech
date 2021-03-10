@@ -139,6 +139,29 @@ We can directly re-use this good work for packaging and contribute back by helpi
 
 Co-op cloud proposes the idea of more direct coordination between distribution methods (app packagers) and production methods (developers).
 
+## Aren't containers horrible from a security perpective?
+
+It depends, just like any other technology and understanding of security. Yes, we've watched [that CCC talk](https://media.ccc.de/v/rc3-49321-devops_disasters_3_1).
+
+It's on us all as the libre software community to deliver secure software and we think one of the promises of Co-op Cloud is more cooperation with developers of the software (who favour containers as a publishing format) and packagers and hosters (who deliver the software to the end-user).
+
+This means that we can patch our app containers directly in conversation with upstream app developers and work towards a culture of security around containers.
+
+We definitely recommend using best-in-class security auditing tools like [docker-bench-security](https://github.com/docker/docker-bench-security), IDS systems like [OSSEC](https://www.ossec.net/), security profiles like [Apparmor](https://docs.docker.com/engine/security/apparmor/) and hooking these into your existing monitoring, alert and update maintenance flows. These are organisational concerns that Co-op Cloud can't solve for you which any software system will require. See this [additional question](/faq/#what-is-important-to-consider-when-running-containers-in-production) for further information.
+
+## What is important to consider when running containers in production?
+
+The Co-op Cloud uses [containers](/faq/#why-containers) as a fundamental building block. Therefore it is important to be aware of some general principles for container management in production environments. These are typically things that you will want to discuss within your co-op or democratic collective about how to prioritise and build up process for. However, as the Co-op Cloud project is still very young, we're also still thinking about how we can make the platform itself mitigate problematic issues and make the maintenance of containers a more stable experience.
+
+With that all in mind, here are some leading thoughts.
+
+- How do you install the Docker daemon itself on your systems and how do you manage upgrades? (system package, upstream Docker Inc. repository?)
+- How do you secure the Docker daemon from remote access (firewalls and system access controls).
+- How do you secure the Docker daemon socket within the swarm (locking the socket down, using things like a [socket proxy](https://github.com/Tecnativa/docker-socket-proxy))
+- How do you trust the upstream container registry (there are [content trust mechanisms](https://docs.docker.com/engine/security/trust/) but it seems also useful to think about whether we need community registry infrastructure using tools like [harbor](https://goharbor.io/) or [distribution](https://github.com/distribution/distribution). This involves a broader discussion with upstream communities.)
+- How do I audit my container security in an on-going process (IDS, OSSEC, Apparmor, etc.)
+- Can I run my containers with a [non-root user setup](https://docs.docker.com/engine/security/rootless/)?
+
 ## Why use the Compose specification?
 
 Every application packaged for the Co-op Cloud is described using a file format which uses the [compose specification](https://compose-spec.io/). It is important to note that we do not use the [Docker compose](https://docs.docker.com/compose/) tool itself to deploy apps using this format, instead we rely on [Docker swarm](https://docs.docker.com/engine/swarm/stack-deploy/).
@@ -172,26 +195,3 @@ It's a balance, of course. In this project, we think that running multiple datab
 It is easier to maintain and migrate going forward in relation to other applications and problems with apps typically have a smaller problem space - you know another app is not interfering with it because there is no interdependency.
 
 It can also pay off when dealing with GDPR related issues and the need to have more stricter data layer separation.
-
-## Aren't containers horrible from a security perpective?
-
-It depends, just like any other technology and understanding of security. Yes, we've watched [that CCC talk](https://media.ccc.de/v/rc3-49321-devops_disasters_3_1).
-
-It's on us all as the libre software community to deliver secure software and we think one of the promises of Co-op Cloud is more cooperation with developers of the software (who favour containers as a publishing format) and packagers and hosters (who deliver the software to the end-user).
-
-This means that we can patch our app containers directly in conversation with upstream app developers and work towards a culture of security around containers.
-
-We definitely recommend using best-in-class security auditing tools like [docker-bench-security](https://github.com/docker/docker-bench-security), IDS systems like [OSSEC](https://www.ossec.net/), security profiles like [Apparmor](https://docs.docker.com/engine/security/apparmor/) and hooking these into your existing monitoring, alert and update maintenance flows. These are organisational concerns that Co-op Cloud can't solve for you which any software system will require. See this [additional question](/faq/#what-is-important-to-consider-when-running-containers-in-production) for further information.
-
-## What is important to consider when running containers in production?
-
-The Co-op Cloud uses [containers](/faq/#why-containers) as a fundamental building block. Therefore it is important to be aware of some general principles for container management in production environments. These are typically things that you will want to discuss within your co-op or democratic collective about how to prioritise and build up process for. However, as the Co-op Cloud project is still very young, we're also still thinking about how we can make the platform itself mitigate problematic issues and make the maintenance of containers a more stable experience.
-
-With that all in mind, here are some leading thoughts.
-
-- How do you install the Docker daemon itself on your systems and how do you manage upgrades? (system package, upstream Docker Inc. repository?)
-- How do you secure the Docker daemon from remote access (firewalls and system access controls).
-- How do you secure the Docker daemon socket within the swarm (locking the socket down, using things like a [socket proxy](https://github.com/Tecnativa/docker-socket-proxy))
-- How do you trust the upstream container registry (there are [content trust mechanisms](https://docs.docker.com/engine/security/trust/) but it seems also useful to think about whether we need community registry infrastructure using tools like [harbor](https://goharbor.io/) or [distribution](https://github.com/distribution/distribution). This involves a broader discussion with upstream communities.)
-- How do I audit my container security in an on-going process (IDS, OSSEC, Apparmor, etc.)
-- Can I run my containers with a [non-root user setup](https://docs.docker.com/engine/security/rootless/)?
