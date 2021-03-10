@@ -139,15 +139,19 @@ We can directly re-use this good work for packaging and contribute back by helpi
 
 Co-op cloud proposes the idea of more direct coordination between distribution methods (app packagers) and production methods (developers).
 
-## Aren't containers horrible from a security perpective?
+## Aren't containers horrible from a security perspective?
 
 It depends, just like any other technology and understanding of security. Yes, we've watched [that CCC talk](https://media.ccc.de/v/rc3-49321-devops_disasters_3_1).
 
-It's on us all as the libre software community to deliver secure software and we think one of the promises of Co-op Cloud is more cooperation with developers of the software (who favour containers as a publishing format) and packagers and hosters (who deliver the software to the end-user).
+It's on us all as the libre software community to deliver secure software and we think one of the promises of Co-op Cloud is better cooperation with developers of the software (who favour containers as a publishing format) and packagers and hosters (who deliver the software to the end-user).
 
 This means that we can patch our app containers directly in conversation with upstream app developers and work towards a culture of security around containers.
 
-We definitely recommend using best-in-class security auditing tools like [docker-bench-security](https://github.com/docker/docker-bench-security), IDS systems like [OSSEC](https://www.ossec.net/), security profiles like [Apparmor](https://docs.docker.com/engine/security/apparmor/) and hooking these into your existing monitoring, alert and update maintenance flows. These are organisational concerns that Co-op Cloud can't solve for you which any software system will require. See this [additional question](/faq/#what-is-important-to-consider-when-running-containers-in-production) for further information.
+We definitely recommend using best-in-class security auditing tools like [docker-bench-security](https://github.com/docker/docker-bench-security), IDS systems like [OSSEC](https://www.ossec.net/), security profiles like [Apparmor](https://docs.docker.com/engine/security/apparmor/) and hooking these into your existing monitoring, alert and update maintenance flows.
+
+Co-op also allows you to compartmentalise different applications onto different servers. You could stack a bunch of apps on one big server or you could deploy one app per server.
+
+These are organisational concerns that Co-op Cloud can't solve for you which any software system will require. See this [additional question](/faq/#what-is-important-to-consider-when-running-containers-in-production) for further information.
 
 ## What is important to consider when running containers in production?
 
