@@ -155,7 +155,9 @@ These are organisational concerns that Co-op Cloud can't solve for you which any
 
 ## What is important to consider when running containers in production?
 
-The Co-op Cloud uses [containers](/faq/#why-containers) as a fundamental building block. Therefore it is important to be aware of some general principles for container management in production environments. These are typically things that you will want to discuss within your co-op or democratic collective about how to prioritise and build up process for. However, as the Co-op Cloud project is still very young, we're also still thinking about how we can make the platform itself mitigate problematic issues and make the maintenance of containers a more stable experience.
+The Co-op Cloud uses [containers](/faq/#why-containers) as a fundamental building block. Therefore it is important to be aware of some general principles for container management in production environments. These are typically things that you will want to discuss within your co-op or democratic collective about how to prioritise and build up process for.
+
+However, as the Co-op Cloud project is still very young, we're also still thinking about how we can make the platform itself mitigate problematic issues and make the maintenance of containers a more stable experience.
 
 With that all in mind, here are some leading thoughts.
 
