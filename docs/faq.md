@@ -168,6 +168,10 @@ With that all in mind, here are some leading thoughts.
 - How do I audit my container security in an on-going process (IDS, OSSEC, Apparmor, etc.)
 - Can I run my containers with a [non-root user setup](https://docs.docker.com/engine/security/rootless/)?
 
+And further reading on this topic:
+
+- [Docker security documentation](https://docs.docker.com/engine/security/)
+
 ## Why use the Compose specification?
 
 Every application packaged for the Co-op Cloud is described using a file format which uses the [compose specification](https://compose-spec.io/). It is important to note that we do not use the [Docker compose](https://docs.docker.com/compose/) tool itself to deploy apps using this format, instead we rely on [Docker swarm](https://docs.docker.com/engine/swarm/stack-deploy/).
