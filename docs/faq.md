@@ -166,3 +166,4 @@ With that all in mind, here are some leading thoughts.
 - How do you secure the Docker daemon socket within the swarm (locking the socket down, using things like a [socket proxy](https://github.com/Tecnativa/docker-socket-proxy))
 - How do you trust the upstream container registry (there are [content trust mechanisms](https://docs.docker.com/engine/security/trust/) but it seems also useful to think about whether we need community registry infrastructure using tools like [harbor](https://goharbor.io/) or [distribution](https://github.com/distribution/distribution). This involves a broader discussion with upstream communities.)
 - How do I audit my container security in an on-going process (IDS, OSSEC, Apparmor, etc.)
+- Can I run my containers with a [non-root user setup](https://docs.docker.com/engine/security/rootless/)?
