@@ -133,15 +133,27 @@ The core technologies of Co-op Cloud are libre software and enjoy wide adoption 
 
 ## Why containers?
 
-We use containers because so many libre software communities choose to use them! They are already writing and using Docker files and Docker-compose definitions for their development and production environments. We can directly re-use this good work for packaging and contribute back by helping maintain their in-repository files. We meet them where they are at and do not create a new packaging format or duplicate effort. Co-op cloud proposes the idea of more direct coordination between distribution methods (app packagers) and production methods (developers).
+We use containers because so many libre software communities choose to use them! They are already writing and using Docker files and Docker-compose definitions for their development and production environments.
+
+We can directly re-use this good work for packaging and contribute back by helping maintain their in-repository files. We meet them where they are at and do not create a new packaging format or duplicate effort.
+
+Co-op cloud proposes the idea of more direct coordination between distribution methods (app packagers) and production methods (developers).
 
 ## Why use the Compose specification?
 
-Every application packaged for the Co-op Cloud is described using a file format which uses the [compose specification](https://compose-spec.io/). It is important to note that we do not use the [Docker compose](https://docs.docker.com/compose/) tool itself to deploy apps using this format, instead we rely on [Docker swarm](https://docs.docker.com/engine/swarm/stack-deploy/). The compose specification is a useful open standard for specifying libre software app deployments in one file. It appears to be the most accessible format for describing apps and this can be seen in the existence of tools like [Kompose](https://kompose.io/) where the compose format is used as the day-to-day developer workflow format which is then translated into more complicated formats for deployment. We are happy to see the compose specification emerging as a new open standard because that means we don't have to rely on Docker Inc. in the future - there will be more community tools available.
+Every application packaged for the Co-op Cloud is described using a file format which uses the [compose specification](https://compose-spec.io/). It is important to note that we do not use the [Docker compose](https://docs.docker.com/compose/) tool itself to deploy apps using this format, instead we rely on [Docker swarm](https://docs.docker.com/engine/swarm/stack-deploy/).
+
+The compose specification is a useful open standard for specifying libre software app deployments in one file. It appears to be the most accessible format for describing apps and this can be seen in the existence of tools like [Kompose](https://kompose.io/) where the compose format is used as the day-to-day developer workflow format which is then translated into more complicated formats for deployment.
+
+We are happy to see the compose specification emerging as a new open standard because that means we don't have to rely on Docker Inc. in the future - there will be more community tools available.
 
 ## Why Docker Swarm?
 
-While many have noted that "swarm is dead" it is in fact [not dead](https://www.mirantis.com/blog/mirantis-will-continue-to-support-and-develop-docker-swarm/). As detailed in the [architecture overview page](/overview/#container-orchestrator), swarm offers an approriate feature set which allows us to support zero-down time upgrades, seamless application rollbacks, automatic deploy failure handling, scaling, hybrid cloud setups and maintain a decentralised design. While the industry is bordering on a [k8s](https://kubernetes.io/) obsession and the need to [scale down](https://microk8s.io/) a tool that was fundamentally built for massive scale, we are going with swarm because it is the tool most suitable for [small technology](https://small-tech.org/). We hope to see a container orchestrator tool that is not directly linked to a for-profit company emerge soon but for now, this is what we have.
+While many have noted that "swarm is dead" it is in fact [not dead](https://www.mirantis.com/blog/mirantis-will-continue-to-support-and-develop-docker-swarm/). As detailed in the [architecture overview page](/overview/#container-orchestrator), swarm offers an approriate feature set which allows us to support zero-down time upgrades, seamless application rollbacks, automatic deploy failure handling, scaling, hybrid cloud setups and maintain a decentralised design.
+
+While the industry is bordering on a [k8s](https://kubernetes.io/) obsession and the need to [scale down](https://microk8s.io/) a tool that was fundamentally built for massive scale, we are going with swarm because it is the tool most suitable for [small technology](https://small-tech.org/).
+
+We hope to see a container orchestrator tool that is not directly linked to a for-profit company emerge soon but for now, this is what we have.
 
 ## What licensing model do you use?
 
@@ -149,11 +161,27 @@ The Co-op Cloud is and will always be available under [copyleft licenses](https:
 
 ## Isn't running everything in containers inefficient?
 
-It is true that if you install 3 applications and each one requires a MySQL database, then you will have 3 installations of MySQL on your system, running in containers. Systems like [YunoHost](/faq/#yunohost) mutualise every part of the system for maximum resource efficiency - if there is a MySQL instance available on the system, then just make a new database there and share the MySQL instance instead of creating more. However, as we see it, this creates a tight coupling between applications on the database level - running a migration on one application where you need to turn the database off takes down the other applications. It's a balance, of course. In this project, we think that running multiple databases and maintaining more strict application isolation is worth the hit in resource efficiency. It is easier to maintain and migrate going forward in relation to other applications and problems with apps typically have a smaller problem space - you know another app is not interfering with it because there is no interdependency. It can also pay off when dealing with GDPR related issues and the need to have more stricter data layer separation.
+It is true that if you install 3 applications and each one requires a MySQL database, then you will have 3 installations of MySQL on your system, running in containers.
+
+Systems like [YunoHost](/faq/#yunohost) mutualise every part of the system for maximum resource efficiency - if there is a MySQL instance available on the system, then just make a new database there and share the MySQL instance instead of creating more.
+
+However, as we see it, this creates a tight coupling between applications on the database level - running a migration on one application where you need to turn the database off takes down the other applications.
+
+It's a balance, of course. In this project, we think that running multiple databases and maintaining more strict application isolation is worth the hit in resource efficiency.
+
+It is easier to maintain and migrate going forward in relation to other applications and problems with apps typically have a smaller problem space - you know another app is not interfering with it because there is no interdependency.
+
+It can also pay off when dealing with GDPR related issues and the need to have more stricter data layer separation.
 
 ## Aren't containers horrible from a security perpective?
 
-It depends, just like any other technology and understanding of security. Yes, we've watched [that CCC talk](https://media.ccc.de/v/rc3-49321-devops_disasters_3_1). It's on us all as the libre software community to deliver secure software and we think one of the promises of Co-op Cloud is more cooperation with developers of the software (who favour containers as a publishing format) and packagers and hosters (who deliver the software to the end-user). This means that we can patch our app containers directly in conversation with upstream app developers and work towards a culture of security around containers. We definitely recommend using best-in-class security auditing tools like [docker-bench-security](https://github.com/docker/docker-bench-security), IDS systems like [OSSEC](https://www.ossec.net/), security profiles like [Apparmor](https://docs.docker.com/engine/security/apparmor/) and hooking these into your existing monitoring, alert and update maintenance flows. These are organisational concerns that Co-op Cloud can't solve for you which any software system will require. See this [additional question](/faq/#what-is-important-to-consider-when-running-containers-in-production) for further information.
+It depends, just like any other technology and understanding of security. Yes, we've watched [that CCC talk](https://media.ccc.de/v/rc3-49321-devops_disasters_3_1).
+
+It's on us all as the libre software community to deliver secure software and we think one of the promises of Co-op Cloud is more cooperation with developers of the software (who favour containers as a publishing format) and packagers and hosters (who deliver the software to the end-user).
+
+This means that we can patch our app containers directly in conversation with upstream app developers and work towards a culture of security around containers.
+
+We definitely recommend using best-in-class security auditing tools like [docker-bench-security](https://github.com/docker/docker-bench-security), IDS systems like [OSSEC](https://www.ossec.net/), security profiles like [Apparmor](https://docs.docker.com/engine/security/apparmor/) and hooking these into your existing monitoring, alert and update maintenance flows. These are organisational concerns that Co-op Cloud can't solve for you which any software system will require. See this [additional question](/faq/#what-is-important-to-consider-when-running-containers-in-production) for further information.
 
 ## What is important to consider when running containers in production?
 
