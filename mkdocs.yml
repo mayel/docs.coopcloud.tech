@@ -48,7 +48,7 @@ nav:
   - Roadmap: roadmap.md
   - Contributing guide: contribute.md
   - Get in touch: contact.md
-  - Credits: credits.md
+  - Credits & thanks: credits.md
 
 plugins:
   - search
