@@ -8,7 +8,7 @@ Co-op Cloud aims to make hosting libre software applications simple for small pr
 
 ## Who is behind the project?
 
-The project was started by workers at [Autonomic](https://autonomic.zone/) which is a [workers co-operative](https://en.wikipedia.org/wiki/Worker_cooperative) providing technologies and infrastructure to empower users to make a positive impact on the world. We use Co-op Cloud in production amongst other systems.
+The project was started by workers at [Autonomic](https://autonomic.zone/) which is a [worker-owned co-operative](https://en.wikipedia.org/wiki/Worker_cooperative). We provide technologies and infrastructure to empower users to make a positive impact on the world. We're using Co-op Cloud in production, amongst other systems.
 
 ## Why Co-op Cloud?
 
@@ -36,8 +36,9 @@ Please read our [initial project announcement post](https://autonomic.zone/blog/
 
 ## What about `$alternative`?
 
-We have various technical critiques of other similar projects which are already
-up-and-running in the ecosystem as they don't necessarily meet our needs as a small tech co-op. However, the Co-op Cloud isn't meant to be a replacement for these others projects. Here is a short overview of the pros/cons we see and how that relates to our goals here.
+We have various technical critiques of other similar projects which are already up-and-running in the ecosystem, as they don't necessarily meet our needs as a small tech co-op. However, Co-op Cloud isn't meant to be a replacement for these other projects. 
+
+Here is a short overview of the pros/cons we see, in relation to our goals
 
 ### Cloudron
 
@@ -58,6 +59,7 @@ up-and-running in the ecosystem as they don't necessarily meet our needs as a sm
 - 👎 Upstreams libre software communities aren't involved in packaging.
 - 👎 Limited to vertical scaling.
 - 👎 Tension between needs of hosting provider and non-technical user.
+- 👎 LDAP introduces security problems - one vulnerable app can expose a user's password for all apps.
 - 👎 Bit of a [black box](https://en.wikipedia.org/wiki/Black_box).
 
 ### YunoHost
@@ -77,6 +79,25 @@ up-and-running in the ecosystem as they don't necessarily meet our needs as a sm
 - 👎 Uninstalling applications leaves growing cruft.
 - 👎 Limited to vertical scaling.
 - 👎 Not intended for use by hosting providers.
+		
+### Caprover
+
+#### 👍
+
+- 👍 Bigger library of applications.
+- 👍 Easy set-up using a DigitalOcean one-click app.
+- 👍 Works without a domain name or a public IP, in non-HTTPS mode (good for homeservers).
+- 👍 Deploy any app with a `docker-compose.yml` file as a "One Click App" via the web interface.
+- 👍 Multi-node (multi-server) set-up works by default.
+
+#### 👎
+
+- 👎 Single-file app definition format, difficult to tweak using entrypoint scripts.
+- 👎 Nginx instead of Traefik for load-balancing.
+- 👎 Command-line client requires NodeJS / `npm`.
+- 👎 [Requires 512MB RAM for a single app](https://github.com/caprover/caprover/issues/28).
+- 👎 [Backup/restore is "experimental"](https://caprover.com/docs/backup-and-restore.html), and doesn't currently help with backing up Docker volumes.
+- 👎 Exposes its bespoke management interface to the internet via HTTPS by default.
 
 ### Ansible
 
