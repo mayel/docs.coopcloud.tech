@@ -36,7 +36,7 @@ Please read our [initial project announcement post](https://autonomic.zone/blog/
 
 ## What about `$alternative`?
 
-We have various technical critiques of other similar projects which are already up-and-running in the ecosystem, as they don't necessarily meet our needs as a small tech co-op. However, Co-op Cloud isn't meant to be a replacement for these other projects. 
+We have various technical critiques of other similar projects which are already up-and-running in the ecosystem, as they don't necessarily meet our needs as a small tech co-op. However, Co-op Cloud isn't meant to be a replacement for these other projects.
 
 Here is a short overview of the pros/cons we see, in relation to our goals
 
@@ -79,7 +79,7 @@ Here is a short overview of the pros/cons we see, in relation to our goals
 - 👎 Uninstalling applications leaves growing cruft.
 - 👎 Limited to vertical scaling.
 - 👎 Not intended for use by hosting providers.
-		
+
 ### Caprover
 
 #### 👍
