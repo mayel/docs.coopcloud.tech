@@ -192,6 +192,7 @@ With that all in mind, here are some leading thoughts.
 And further reading on this topic:
 
 - [Docker security documentation](https://docs.docker.com/engine/security/)
+- [OWASP Docker Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
 
 ## Why use the Compose specification?
 
