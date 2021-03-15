@@ -42,6 +42,15 @@ Once your DNS and docker daemon are up, you can install [`abra`](https://git.aut
 
 Firstly, install `abra` locally.
 
+!!! danger "Here be dragons"
+
+    `abra` is written in Bash version 4 and if you have a version older than
+    that, you will face issues. You can check your current bash version by
+    running `bash --version`. Some developers of the tool are using Zsh > 5 and
+    things work fine. Some MacOS users have had to use this [Homebrew
+    formula](https://formulae.brew.sh/formula/bash#default) to upgrade their
+    Bash.
+
 ```bash
 $ curl https://install.abra.autonomic.zone | bash
 ```
