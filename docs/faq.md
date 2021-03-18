@@ -210,6 +210,8 @@ While the industry is bordering on a [k8s](https://kubernetes.io/) obsession and
 
 We hope to see a container orchestrator tool that is not directly linked to a for-profit company emerge soon but for now, this is what we have.
 
+If you want to learn more, see [dockerswarm.rocks](https://dockerswarm.rocks/) for a nice guide.
+
 ## What licensing model do you use?
 
 The Co-op Cloud is and will always be available under [copyleft licenses](https://en.wikipedia.org/wiki/Copyleft).
