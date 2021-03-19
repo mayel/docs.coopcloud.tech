@@ -24,7 +24,6 @@ Open the `compose.yml` in your favourite editor and have a gander :swan: . There
 4. The MySQL passwords are sent as variables which is fine for basic use, but if we replace them with Docker secrets we can keep them out of our env files if we want to publish those more widely.
 5. The MariaDB service doesn't need to be exposed to the internet, so we can define an `internal` network for it to communicate with Matomo.
 6. Lastly, we want to use `deploy.labels` and remove the `ports:` definition, to tell Traefik to forward requests to Matomo based on hostname and generate an SSL certificate.
-7. I'll also rename the `db` and `app` services to `mariadb` and `matomo` respectively, for consistency with our other apps.
 
 The resulting `compose.yml` is available [here](https://git.autonomic.zone/coop-cloud/matomo/src/branch/main/compose.yml).
 
