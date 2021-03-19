@@ -19,7 +19,7 @@ $ wget https://raw.githubusercontent.com/matomo-org/docker/master/.examples/apac
 Open the `compose.yml` in your favourite editor and have a gander :swan: . There are a few things we're looking for -- full list to come -- but a few things we can immediately see are:
 
 1. Let's bump the version to `3.8`, to make sure we can use all the latest swarm coolness
-2. We load environment variables separately via `abra`, so we'll strip out `env_file`.
+2. We load environment variables separately via [abra](/overview/#command-line-tool), so we'll strip out `env_file`.
 3. The `/var/www/html` volume definition on L21 is a bit overzealous; it means a copy of Matomo will be stored separately per app instance, which is a waste of space in most cases. We'll narrow it down according to the documentation -- here, the developers have been nice enough to suggest `logs` and `config` volumes instead, which is a decent start
 4. The MySQL passwords are sent as variables which is fine for basic use, but if we replace them with Docker secrets we can keep them out of our env files if we want to publish those more widely.
 5. The MariaDB service doesn't need to be exposed to the internet, so we can define an `internal` network for it to communicate with Matomo.
