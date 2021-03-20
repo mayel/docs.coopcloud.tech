@@ -20,7 +20,7 @@ Manual edits will be over-written the next time that script is run.
 | [Custom HTML](https://git.autonomic.zone/coop-cloud/custom-html) | ❷💛 | ❶💚 | ❌ | ❌ | ⛔ | ❷💛 | ❌ |
 | [Filestash](https://git.autonomic.zone/coop-cloud/filestash) | ❹💣 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [H5ai](https://git.autonomic.zone/coop-cloud/h5ai) | ❸🍎 | ❸🍎 | ✅ | ❌ | ⛔ | ❌ | ❌ |
-| [Invoiceninja](https://git.autonomic.zone/coop-cloud/invoiceninja) | ❹💣 | ❶💚 | ❌ | ❌ | ? | ❌ | ? |
+| [Invoiceninja](https://git.autonomic.zone/coop-cloud/invoiceninja) | ❹💣 | ❸🍎 | ❌ | ❌ | ? | ❌ | ? |
 | [keycloak](https://git.autonomic.zone/coop-cloud/keycloak) | ❷💛 | ❶💚 | ✅ | ? | ❸🍎 | ❷💛 | ⛔ |
 | [Keyoxide](https://git.autonomic.zone/coop-cloud/keyoxide) | ❷💛 | ❶💚 | ✅ | ❌ | ⛔ | ❷💛 | ⛔ |
 | [Kimai](https://git.autonomic.zone/coop-cloud/kimai) | ? | ❷💛 | ❌ | ❌ | ❌ | ❷💛 | ❌ |
@@ -31,11 +31,13 @@ Manual edits will be over-written the next time that script is run.
 | [Mediawiki](https://git.autonomic.zone/coop-cloud/mediawiki) | ❸🍎 | ❶💚 | ❌ | ✅ | ❶💚 | ❷💛 | ❷💛 (OAuth, SAML) |
 | [Nextcloud](https://git.autonomic.zone/coop-cloud/nextcloud) | ❷💛 | ❶💚 | ✅ | ❌ | ❶💚 | ❷💛 | ❸🍎 (OAuth) |
 | [Pelican](https://git.autonomic.zone/coop-cloud/pelican) | ❷💛 | ❹💣 | ❌ | ❌ | ⛔ | ❷💛 | ❌ |
+| [Radicale](https://git.autonomic.zone/coop-cloud/radicale) | ❹💣 | ❸🍎 | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [Rocket.chat](https://git.autonomic.zone/coop-cloud/rocketchat) | ❷💛 | ❶💚 | ✅ | ❌ | ❌ | ❷💛 | ❶💚 (OAuth) |
 | [Selfoss](https://git.autonomic.zone/coop-cloud/selfoss) | ❸🍎 | ❸🍎 | ✅ | ❌ | ❌ | ❸🍎 | ⛔ |
 | [Statping](https://git.autonomic.zone/coop-cloud/statping) | ❸🍎 | ❶💚 | ❌ | ❌ | ❸🍎 | ❌ | ❌ |
 | [Wallabag](https://git.autonomic.zone/coop-cloud/wallabag) | ❸🍎 | ❶💚 | ❌ | ❌ | ❌ | ❷💛 | ❌ |
 | [Wordpress](https://git.autonomic.zone/coop-cloud/wordpress) | ❶💚 | ❶💚 | ✅ | ✅ | ❶💚 | ❷💛 | ❌ |
+| [ZNC](https://git.autonomic.zone/coop-cloud/znc) | ❹💣 | ❸🍎 | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 ## Developer tools
 
@@ -52,6 +54,7 @@ Manual edits will be over-written the next time that script is run.
 
 | **Name** | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [go-neb](https://git.autonomic.zone/coop-cloud/go-neb) | ❹💣 | ❶💚 |  |  |  |  |  |
 | [portainer](https://git.autonomic.zone/coop-cloud/portainer) | ? | ❶💚 | ❌ | ? | ? | ❷💛 | ❌ |
 | [Postfix-Relay](https://git.autonomic.zone/coop-cloud/postfix-relay) | ❷💛 | ❶💚 | ✅ | ❌ | ⛔ | ❷💛 | ⛔ |
 | [swarm-cronjob](https://git.autonomic.zone/coop-cloud/swarm-cronjob) | ? | ❶💚 | ? | ? | ? | ? | ? |
@@ -61,14 +64,14 @@ Manual edits will be over-written the next time that script is run.
 
 ## Graveyard
 
-_(We're not running these apps ourselves, and most of them probably need further
-packaging work to be used in production)_
+(We're not running these apps ourselves, and most of them probably need further packaging work to be used in production)_
 
 | **Name** | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Filerun](https://git.autonomic.zone/coop-cloud/filerun) | ❹💣 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [PHPServerMon](https://git.autonomic.zone/coop-cloud/phpservermon) | ❹💣 | ❸🍎 | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [Projectsend](https://git.autonomic.zone/coop-cloud/projectsend) | ❹💣 | ❸🍎 | ✅ | ❌ | ❌ | ❌ | ❌ |
+| [radicle-seed-node](https://git.autonomic.zone/coop-cloud/radicle-seed-node) | ❹💣 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [Statuspal](https://git.autonomic.zone/coop-cloud/statuspal) | ❹💣 | ❶💚 | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 ## Status legend
