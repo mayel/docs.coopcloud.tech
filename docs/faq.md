@@ -4,7 +4,7 @@ title: Frequently asked questions
 
 ## What is the Co-op Cloud?
 
-Co-op Cloud aims to make hosting libre software applications simple for small providers. It uses the latest container technologies and innovations and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all. The project is intended for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure.
+Co-op Cloud aims to make hosting libre software applications simple for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure. It uses the latest container technologies and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all.
 
 ## Who is behind the project?
 
@@ -38,7 +38,7 @@ Please read our [initial project announcement post](https://autonomic.zone/blog/
 
 We have various technical critiques of other similar projects which are already up-and-running in the ecosystem, as they don't necessarily meet our needs as a small tech co-op. However, Co-op Cloud isn't meant to be a replacement for these other projects.
 
-Here is a short overview of the pros/cons we see, in relation to our goals
+Here is a short overview of the pros/cons we see, in relation to our goals and needs.
 
 ### Cloudron
 
@@ -154,11 +154,11 @@ The core technologies of Co-op Cloud are libre software and enjoy wide adoption 
 
 ## Why containers?
 
-We use containers because so many libre software communities choose to use them! They are already writing and using Docker files and Docker-compose definitions for their development and production environments.
+We use containers because so many libre software communities choose to use them. They are already writing and using Docker files and Docker-compose definitions for their development and production environments.
 
-We can directly re-use this good work for packaging and contribute back by helping maintain their in-repository files. We meet them where they are at and do not create a new packaging format or duplicate effort.
+We can directly re-use this good packaging work and contribute back by helping maintain their in-repository files. We meet them where they are at and do not create a new packaging format or duplicate effort.
 
-Co-op cloud proposes the idea of more direct coordination between distribution methods (app packagers) and production methods (developers).
+Co-op cloud proposes the idea of more direct coordination between distribution (app packagers) and production (developers) methods.
 
 ## Aren't containers horrible from a security perspective?
 
@@ -170,7 +170,7 @@ This means that we can patch our app containers directly in conversation with up
 
 We definitely recommend using best-in-class security auditing tools like [docker-bench-security](https://github.com/docker/docker-bench-security), IDS systems like [OSSEC](https://www.ossec.net/), security profiles like [Apparmor](https://docs.docker.com/engine/security/apparmor/) and hooking these into your existing monitoring, alert and update maintenance flows.
 
-Co-op also allows you to compartmentalise different applications onto different servers. You could stack a bunch of apps on one big server or you could deploy one app per server.
+It's up to how you want to arrange your system. For example, Co-op Cloud also allows you to compartmentalise different applications onto different servers. You could stack a bunch of apps on one big server or you could deploy one app per server.
 
 These are organisational concerns that Co-op Cloud can't solve for you which any software system will require. See this [additional question](/faq/#what-is-important-to-consider-when-running-containers-in-production) for further information.
 
@@ -215,6 +215,8 @@ If you want to learn more, see [dockerswarm.rocks](https://dockerswarm.rocks/) f
 ## What licensing model do you use?
 
 The Co-op Cloud is and will always be available under [copyleft licenses](https://en.wikipedia.org/wiki/Copyleft).
+
+We're discussing more specifics on [this issue](https://git.autonomic.zone/coop-cloud/organising/issues/50) if you'd like to see the on-going conversation.
 
 ## Isn't running everything in containers inefficient?
 
