@@ -38,7 +38,7 @@ nav:
   - Application catalogue: apps.md
   - Tutorials:
       - Package your first application: package.md
-      - Use git to manage your configuration: git.md
+      - Manage your app configuration: config.md
       - Manage secret data: secrets.md
       - Back-up and restore an application: backup-restore.md
       - Consider Docker security hardening practices: hardening.md
