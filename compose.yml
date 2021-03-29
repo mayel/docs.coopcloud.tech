@@ -19,7 +19,7 @@ services:
       labels:
         - "traefik.enable=true"
         - "traefik.http.services.coop-cloud-mkdocs.loadbalancer.server.port=8000"
-        - "traefik.http.routers.coop-cloud-mkdocs.rule=Host(`docs.cloud.autonomic.zone`,`cloud.autonomic.zone`)"
+        - "traefik.http.routers.coop-cloud-mkdocs.rule=Host(`docs.cloud.autonomic.zone`)"
         - "traefik.http.routers.coop-cloud-mkdocs.entrypoints=web-secure"
         - "traefik.http.routers.coop-cloud-mkdocs.tls.certresolver=production"
 
