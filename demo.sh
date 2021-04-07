@@ -4,13 +4,11 @@
 # `set -x` line below to see what this script is doing.
 #
 # [0]: https://doitlive.readthedocs.io/
-function abraa(){
-	$ABRA_DIR/src/abra $@
-}
 
 #set -x
 
-export ABRA_DIR=$(mktemp -d)
+export ABRA_DIR=/tmp/abra_demo
+mkdir -p $ABRA_DIR
 
 curl https://install.abra.autonomic.zone | bash -s -- --dev
 
