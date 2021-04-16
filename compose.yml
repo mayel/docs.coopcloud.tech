@@ -19,9 +19,12 @@ services:
       labels:
         - "traefik.enable=true"
         - "traefik.http.services.coop-cloud-mkdocs.loadbalancer.server.port=8000"
-        - "traefik.http.routers.coop-cloud-mkdocs.rule=Host(`docs.cloud.autonomic.zone`)"
+        - "traefik.http.routers.coop-cloud-mkdocs.rule=Host(`docs.coopcloud.tech`, `www.docs.coopcloud.tech`, `docs.cloud.autonomic.zone`, `www.docs.cloud.autonomic.zone`)"
         - "traefik.http.routers.coop-cloud-mkdocs.entrypoints=web-secure"
         - "traefik.http.routers.coop-cloud-mkdocs.tls.certresolver=production"
+        - "traefik.http.routers.coop-cloud-mkdocs.middlewares=coop-cloud-mkdocs-redirect"
+        - "traefik.http.middlewares.coop-cloud-mkdocs-redirect.headers.SSLForceHost=true"
+        - "traefik.http.middlewares.coop-cloud-mkdocs-redirect.headers.SSLHost=docs.coopcloud.tech"
 
 networks:
   proxy:
