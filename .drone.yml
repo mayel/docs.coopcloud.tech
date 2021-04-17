@@ -9,7 +9,7 @@ steps:
         from_secret: docker_reg_username
       password:
         from_secret: docker_reg_passwd
-      repo: decentral1se/docs.cloud.autonomic.zone
+      repo: decentral1se/docs.coopcloud.tech
       tags: latest
 
   - name: deployment
