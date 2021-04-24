@@ -10,6 +10,9 @@ App information is auto-generated with abra/app-catalogue.sh:
 Manual edits will be over-written the next time that script is run.
 -->
 
+An experimental version of this catalogue is available here:
+https://dev.apps.coopcloud.tech
+
 ## Applications
 
 | **Name** | **Status** | **Image** | **Healtcheck** | **Backups** | **Email** | **CI** | **Single-Sign-On** |
