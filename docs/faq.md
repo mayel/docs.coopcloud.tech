@@ -234,6 +234,6 @@ It can also pay off when dealing with GDPR related issues and the need to have m
 
 ## How do I keep up-to-date with Docker Swarm developments?
 
-- [Official release changelog for Docker Engine](https://docs.docker.com/engine/release-notes/)
+- [Official release changelog for Docker Engine (look for entries under the "Swarm" header)](https://docs.docker.com/engine/release-notes/)
 - [All issues raised with label `area/swarm` label on github.com/moby/moby](https://github.com/moby/moby/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%2Fswarm)
 - [All pull requests submitted with the `area/swarm` label on github.com/moby/moby](https://github.com/moby/moby/pulls?q=is%3Aopen+is%3Apr+label%3Aarea%2Fswarm)
