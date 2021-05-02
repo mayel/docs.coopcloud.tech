@@ -231,3 +231,9 @@ It's a balance, of course. In this project, we think that running multiple datab
 It is easier to maintain and migrate going forward in relation to other applications and problems with apps typically have a smaller problem space - you know another app is not interfering with it because there is no interdependency.
 
 It can also pay off when dealing with GDPR related issues and the need to have more stricter data layer separation.
+
+## How do I keep up-to-date with Docker Swarm developments?
+
+- [Official release changelog for Docker Engine](https://docs.docker.com/engine/release-notes/)
+- [All issues raised with label `area/swarm` label on github.com/moby/moby](https://github.com/moby/moby/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%2Fswarm)
+- [All pull requests submitted with the `area/swarm` label on github.com/moby/moby](https://github.com/moby/moby/pulls?q=is%3Aopen+is%3Apr+label%3Aarea%2Fswarm)
