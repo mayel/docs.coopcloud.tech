@@ -2,7 +2,7 @@
 title: Roadmap
 ---
 
-The project is currently in an [alpa quality](https://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha) release state. We are working towards a [beta release](https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta).
+The project is currently in an [alpha quality](https://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha) release state. We are working towards a [beta release](https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta).
 
 Here's how you can see our current status:
 
