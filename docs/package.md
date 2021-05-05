@@ -27,7 +27,7 @@ Open the `compose.yml` in your favourite editor and have a gander :swan: . There
 
 The resulting `compose.yml` is available [here](https://git.autonomic.zone/coop-cloud/matomo/src/branch/main/compose.yml).
 
-Now, create an `.envrc` file (or call it anything else, but remember to specify the `-e` option for `abra`):
+Now, create an `.env` file (or call it anything else, but remember to specify the `-e` option for `abra`):
 
 ```
 TYPE=matomo
