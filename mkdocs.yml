@@ -44,7 +44,7 @@ nav:
       - Consider Docker security hardening practices: hardening.md
       - Scale an app up to handle more traffic: scale.md
       - Roll an app back to a previous version: rollback.md
-  - App Config Guide: app-config-guide.md
+  - App config guide: app-config-guide.md
   - Packager guide: packager-guide.md
   - Frequently asked questions: faq.md
   - Roadmap: roadmap.md
