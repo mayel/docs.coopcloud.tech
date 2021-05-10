@@ -2,31 +2,31 @@
 title: App config guide
 ---
 
-# Keycloak
+## Keycloak
 
-## How do I setup a custom theme?
+#### How do I setup a custom theme?
 
 Check [this approach](https://git.autonomic.zone/ruangrupa/login.lumbung.space).
 
-# Nextcloud
+## Nextcloud
 
-## How do I customise the default home page when logging in?
+#### How do I customise the default home page when logging in?
 
 - Delete the dashboard app since it is so corporate
 - Follow [these docs](https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/default_files_configuration.html) to set the default files list for each user in the Files app
 - Configure a `defaultapp` in your `config.php` or use [apporder](https://apps.nextcloud.com/apps/apporder)
 
-## How do I integrate with Keycloak SSO?
+#### How do I integrate with Keycloak SSO?
 
 Use [this plugin](https://github.com/pulsejet/nextcloud-oidc-login). You can use [this trick](https://janikvonrotz.ch/2020/10/20/openid-connect-with-nextcloud-and-keycloak/) (see "Cryptic Usernames" work-around) to get proper usernames.
 
 > TODO(decentral1se): copy over keycloak client config and nextcloud config.php
 
-## Why is my synchronisation client freezing on the "grant access" step?
+#### Why is my synchronisation client freezing on the "grant access" step?
 
 Please see [this ticket](https://git.autonomic.zone/coop-cloud/nextcloud/issues/5).
 
-## How can I customise the CSS on the NC?
+#### How can I customise the CSS?
 
 There is some basic stuff in the admin settings.
 
@@ -34,7 +34,7 @@ To go a little deeper, you can use [this handy app](https://apps.nextcloud.com/a
 
 ## Drone
 
-## Generating deploy keys
+#### Generating deploy keys
 
 We normally do something like the following.
 
@@ -44,7 +44,7 @@ $ ssh-keygen -t ed25519 -C drone@swarm.autonomic.zone
 
 When you're loading them into Drone, make sure to use the right name of the organisation when using `drone orgsecret add`.
 
-## How to change orgsecret values
+#### How to change orgsecret values
 
 First, get your Drone CLI tool downloaded and the environment configured.
 
@@ -61,7 +61,7 @@ $ ./drone orgsecret ls
 $ ./drone orgsecret add someorg my_deploy_key @my_private_key_file
 ```
 
-## How to enable build failure notifications
+#### How to enable build failure notifications
 
 Add this to your `.drone.yml` file. See the [plugin docs](http://plugins.drone.io/drone-plugins/drone-slack/) for more.
 
@@ -86,20 +86,16 @@ Add this to your `.drone.yml` file. See the [plugin docs](http://plugins.drone.i
     This is so that the notification will wait until all other pipelines are
     run before performing the notification logic.
 
-## Skipping CI builds
+#### Skipping CI builds
 
 Add `[ci skip]` into the git commit message. You don't have to run builds if you don't want to.
 
-# Gitea
+## Peertube
 
-> TODO
-
-# Peertube
-
-## How do I wire up Keycloak SSO?
+#### How do I wire up Keycloak SSO?
 
 Use [this plugin](https://framagit.org/framasoft/peertube/official-plugins/tree/master/peertube-plugin-auth-openid-connect).
 
-## How do I develop a custom theme?
+#### How do I develop a custom theme?
 
 See [this approach](https://git.autonomic.zone/ruangrupa/peertube-plugin-lumbung-space).
