@@ -1,5 +1,5 @@
 ---
-title: Package your first application
+title: Package your first app
 ---
 
 Let's take as an example, [Matomo web analytics](https://matomo.org/).

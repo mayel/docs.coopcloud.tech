@@ -4,7 +4,7 @@ title: Frequently asked questions
 
 ## What is the Co-op Cloud?
 
-Co-op Cloud aims to make hosting libre software applications simple for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure. It uses the latest container technologies and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all.
+Co-op Cloud aims to make hosting libre software apps simple for small service providers such as tech co-operatives who are looking to standardise around an open, transparent and scalable infrastructure. It uses the latest container technologies and configurations are shared into [the commons](https://en.wikipedia.org/wiki/Commons) for the benefit of all.
 
 ## Who is behind the project?
 
@@ -44,17 +44,17 @@ Here is a short overview of the pros/cons we see, in relation to our goals and n
 
 #### 👍
 
-- 👍 Decent web interface for application, domain & user management.
-- 👍 Large library of applications.
-- 👍 Built-in SSO using LDAP, which is compatible with more applications and often has a better user interface than OAuth.
-- 👍 Applications are actively maintained by the Cloudron team.
+- 👍 Decent web interface for app, domain & user management.
+- 👍 Large library of apps.
+- 👍 Built-in SSO using LDAP, which is compatible with more apps and often has a better user interface than OAuth.
+- 👍 apps are actively maintained by the Cloudron team.
 
 #### 👎
 
 - 👎 Moving away from open source. The core is now proprietary software.
-- 👎 libre tier has a single application limit.
-- 👎 Based on Docker images, not stacks, so multi-process applications (e.g. parsoid visual editor for Mediawiki) are a non-starter.
-- 👎 Difficult to extend applications.
+- 👎 libre tier has a single app limit.
+- 👎 Based on Docker images, not stacks, so multi-process apps (e.g. parsoid visual editor for Mediawiki) are a non-starter.
+- 👎 Difficult to extend apps.
 - 👎 Only supported on Ubuntu LTS.
 - 👎 Upstreams libre software communities aren't involved in packaging.
 - 👎 Limited to vertical scaling.
@@ -66,17 +66,17 @@ Here is a short overview of the pros/cons we see, in relation to our goals and n
 
 #### 👍
 
-- 👍 Lovely web interface for application, domain & user management.
-- 👍 Bigger library of applications.
+- 👍 Lovely web interface for app, domain & user management.
+- 👍 Bigger library of apps.
 - 👍 Awesome backup / deploy / restore continuous integration testing.
-- 👍 Supports hosting applications in subdirectories as well as subdomains.
+- 👍 Supports hosting apps in subdirectories as well as subdomains.
 - 👍 Doesn't require a public-facing IP.
 - 👍 Supports system-wide mutualisation of resources for apps (e.g. sharing databases by default)
 
 #### 👎
 
 - 👎 Upstream libre software communities aren't involved in packaging.
-- 👎 Uninstalling applications leaves growing cruft.
+- 👎 Uninstalling apps leaves growing cruft.
 - 👎 Limited to vertical scaling.
 - 👎 Not intended for use by hosting providers.
 
@@ -84,7 +84,7 @@ Here is a short overview of the pros/cons we see, in relation to our goals and n
 
 #### 👍
 
-- 👍 Bigger library of applications.
+- 👍 Bigger library of apps.
 - 👍 Easy set-up using a DigitalOcean one-click app.
 - 👍 Works without a domain name or a public IP, in non-HTTPS mode (good for homeservers).
 - 👍 Deploy any app with a `docker-compose.yml` file as a "One Click App" via the web interface.
@@ -138,8 +138,8 @@ Here is a short overview of the pros/cons we see, in relation to our goals and n
 
 #### 👎
 
-- 👎 Loads of manual work required for application isolation and backups.
-- 👎 Array of sysadmin skills required to install and maintain applications.
+- 👎 Loads of manual work required for app isolation and backups.
+- 👎 Array of sysadmin skills required to install and maintain apps.
 - 👎 Hard to share configurations into the commons.
 - 👎 No idea who has done what change when.
 
@@ -170,7 +170,7 @@ This means that we can patch our app containers directly in conversation with up
 
 We definitely recommend using best-in-class security auditing tools like [docker-bench-security](https://github.com/docker/docker-bench-security), IDS systems like [OSSEC](https://www.ossec.net/), security profiles like [Apparmor](https://docs.docker.com/engine/security/apparmor/) and hooking these into your existing monitoring, alert and update maintenance flows.
 
-It's up to how you want to arrange your system. For example, Co-op Cloud also allows you to compartmentalise different applications onto different servers. You could stack a bunch of apps on one big server or you could deploy one app per server.
+It's up to how you want to arrange your system. For example, Co-op Cloud also allows you to compartmentalise different apps onto different servers. You could stack a bunch of apps on one big server or you could deploy one app per server.
 
 These are organisational concerns that Co-op Cloud can't solve for you which any software system will require. See this [additional question](/faq/#what-is-important-to-consider-when-running-containers-in-production) for further information.
 
@@ -196,7 +196,7 @@ And further reading on this topic:
 
 ## Why use the Compose specification?
 
-Every application packaged for the Co-op Cloud is described using a file format which uses the [compose specification](https://compose-spec.io/). It is important to note that we do not use the [Docker compose](https://docs.docker.com/compose/) tool itself to deploy apps using this format, instead we rely on [Docker swarm](https://docs.docker.com/engine/swarm/stack-deploy/).
+Every app packaged for the Co-op Cloud is described using a file format which uses the [compose specification](https://compose-spec.io/). It is important to note that we do not use the [Docker compose](https://docs.docker.com/compose/) tool itself to deploy apps using this format, instead we rely on [Docker swarm](https://docs.docker.com/engine/swarm/stack-deploy/).
 
 The compose specification is a useful open standard for specifying libre software app deployments in one file. It appears to be the most accessible format for describing apps and this can be seen in the existence of tools like [Kompose](https://kompose.io/) where the compose format is used as the day-to-day developer workflow format which is then translated into more complicated formats for deployment.
 
@@ -204,7 +204,7 @@ We are happy to see the compose specification emerging as a new open standard be
 
 ## Why Docker Swarm?
 
-While many have noted that "swarm is dead" it is in fact [not dead](https://www.mirantis.com/blog/mirantis-will-continue-to-support-and-develop-docker-swarm/). As detailed in the [architecture overview page](/overview/#container-orchestrator), swarm offers an appropriate feature set which allows us to support zero-down time upgrades, seamless application rollbacks, automatic deploy failure handling, scaling, hybrid cloud setups and maintain a decentralised design.
+While many have noted that "swarm is dead" it is in fact [not dead](https://www.mirantis.com/blog/mirantis-will-continue-to-support-and-develop-docker-swarm/). As detailed in the [architecture overview page](/overview/#container-orchestrator), swarm offers an appropriate feature set which allows us to support zero-down time upgrades, seamless app rollbacks, automatic deploy failure handling, scaling, hybrid cloud setups and maintain a decentralised design.
 
 While the industry is bordering on a [k8s](https://kubernetes.io/) obsession and the need to [scale down](https://microk8s.io/) a tool that was fundamentally built for massive scale, we are going with swarm because it is the tool most suitable for [small technology](https://small-tech.org/).
 
@@ -220,15 +220,15 @@ We're discussing more specifics on [this issue](https://git.autonomic.zone/coop-
 
 ## Isn't running everything in containers inefficient?
 
-It is true that if you install 3 applications and each one requires a MySQL database, then you will have 3 installations of MySQL on your system, running in containers.
+It is true that if you install 3 apps and each one requires a MySQL database, then you will have 3 installations of MySQL on your system, running in containers.
 
 Systems like [YunoHost](/faq/#yunohost) mutualise every part of the system for maximum resource efficiency - if there is a MySQL instance available on the system, then just make a new database there and share the MySQL instance instead of creating more.
 
-However, as we see it, this creates a tight coupling between applications on the database level - running a migration on one application where you need to turn the database off takes down the other applications.
+However, as we see it, this creates a tight coupling between apps on the database level - running a migration on one app where you need to turn the database off takes down the other apps.
 
-It's a balance, of course. In this project, we think that running multiple databases and maintaining more strict application isolation is worth the hit in resource efficiency.
+It's a balance, of course. In this project, we think that running multiple databases and maintaining more strict app isolation is worth the hit in resource efficiency.
 
-It is easier to maintain and migrate going forward in relation to other applications and problems with apps typically have a smaller problem space - you know another app is not interfering with it because there is no interdependency.
+It is easier to maintain and migrate going forward in relation to other apps and problems with apps typically have a smaller problem space - you know another app is not interfering with it because there is no interdependency.
 
 It can also pay off when dealing with GDPR related issues and the need to have more stricter data layer separation.
 

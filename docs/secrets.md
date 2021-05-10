@@ -13,9 +13,10 @@ example_wordpress_db_password_v1
 ```
 
 `abra` includes several commands to make it easier to manage secrets:
- - `abra app <app> secret generate` -- to auto-generate a single secret, or all secrets defined by the application, and store them in the Docker Swarm store,
- - `abra app <app> secret insert` -- to insert a single secret value from the Docker Swarm store,
- - `abra app <app> secret delete` -- to remove a single secret, or all secrets defined in the application, from the Docker Swarm store.
+
+- `abra app <app> secret generate` -- to auto-generate a single secret, or all secrets defined by the app, and store them in the Docker Swarm store,
+- `abra app <app> secret insert` -- to insert a single secret value from the Docker Swarm store,
+- `abra app <app> secret delete` -- to remove a single secret, or all secrets defined in the app, from the Docker Swarm store.
 
 <a id="versions"></a>
 
@@ -23,7 +24,7 @@ example_wordpress_db_password_v1
 
 You will notice `v1` in the example secret names above: like Docker Configs, Docker Secrets are [immutable], which means that their values can't be changed after they're set. To accommodate this, Co-op Cloud uses the established convention of "secret versions". Every time you change (rotate) a secret, you will insert it as a new version.
 
-Because secret versions are managed per-instance by the people deploying their applications, secret versions are stored in the `.env` file for each application:
+Because secret versions are managed per-instance by the people deploying their apps, secret versions are stored in the `.env` file for each app:
 
 ```
 $ find -L ~/.abra/servers/ -name '*.env' -print0 | xargs -0 grep -h SECRET
@@ -51,7 +52,7 @@ You can generate secrets in one of two ways:
 
 !!! note "How are secrets generated?"
 
-		Depending on how the application is configured, you will require the `pwqgen` (from `passwdqc`) and `pwgen` binaries by default, although you can specify your own password-generation app when running `abra <app> secret generate` by providing the `<cmd>` argument.
+    	Depending on how the app is configured, you will require the `pwqgen` (from `passwdqc`) and `pwgen` binaries by default, although you can specify your own password-generation app when running `abra <app> secret generate` by providing the `<cmd>` argument.
 
 ## Inserting secrets manually
 
@@ -67,21 +68,21 @@ So, given how [secret versions](#versions) work, here's how you change a secret:
 
 1. Find out the current version number of the secret, e.g. by running `abra app example_wordpress config`, and choose a new one. Let's assume it's currently `v1`, so by convention the new secret will be `v2`.
 2. Generate or insert the new secret:
-	```
-	abra app example_wordpress secret generate db_password v2
-	```
-	or
-	```
-	abra app example_wordpress secret insert db_password v2 "foobar"
-	```
+   ```
+   abra app example_wordpress secret generate db_password v2
+   ```
+   or
+   ```
+   abra app example_wordpress secret insert db_password v2 "foobar"
+   ```
 3. Edit the app configuration to change which secret version the app will use:
-	```
-	abra app example_wordpress config
-	```
-4. Re-reploy the application with the new secret version:
-	```
-	abra app example_wordpress deploy
-	```
+   ```
+   abra app example_wordpress config
+   ```
+4. Re-reploy the app with the new secret version:
+   ```
+   abra app example_wordpress deploy
+   ```
 
 ## Storing secrets in `pass`
 
@@ -103,6 +104,6 @@ This functionality currently relies on our specific `pass` structure; patches to
 
 TODO
 
-[Docker Secrets]: https://docs.docker.com/engine/swarm/secrets/
+[docker secrets]: https://docs.docker.com/engine/swarm/secrets/
 [immutable]: https://en.wikipedia.org/wiki/Immutable_object
 [pass]: https://www.passwordstore.org

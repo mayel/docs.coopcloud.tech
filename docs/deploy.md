@@ -1,8 +1,8 @@
 ---
-title: Deploy your first application
+title: Deploy your first app
 ---
 
-In order to deploy an application you need two things:
+In order to deploy an app you need two things:
 
 1. a server (e.g. [Hetzner VPS](https://www.hetzner.com/cloud))
 2. a DNS provider (e.g. [Gandi](https://www.gandi.net/en))

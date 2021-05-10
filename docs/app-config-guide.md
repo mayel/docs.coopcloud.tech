@@ -1,5 +1,5 @@
 ---
-title: Application config guide
+title: App config guide
 ---
 
 # Keycloak

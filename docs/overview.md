@@ -4,12 +4,12 @@ title: Technical overview
 
 The Co-op Cloud is made up of a few simple, composable pieces. The system does not rely on any one specific implementation: each part may be replaced and extended as needed.
 
-- [Free software applications](#free-software-applications)
+- [Libre software apps](#libre-software-apps)
 - [The packaging format](#the-packaging-format)
 - [Container orchestrator](#container-orchestrator)
 - [Command-line tool](#command-line-tool)
 
-## Free software applications
+## Libre software apps
 
 Applications that you may already use in your daily life: [Nextcloud], [Jitsi], [Mediawiki], [Rocket.chat] and [many more]! These are tools that are created by volunteer communities who use [free software licenses] in order to build up the public software commons and offer more digital alternatives.
 

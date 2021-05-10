@@ -34,16 +34,17 @@ nav:
   - A co-operative alternative: index.md
   - Getting started guide:
       - Architecture overview: overview.md
-      - Deploy your first application: deploy.md
-  - Application catalogue: apps.md
+      - Deploy your first app: deploy.md
+  - App catalogue: apps.md
   - Tutorials:
-      - Package your first application: package.md
+      - Package your first app: package.md
       - Manage your app configuration: config.md
       - Manage secret data: secrets.md
-      - Back-up and restore an application: backup-restore.md
+      - Back-up and restore an app: backup-restore.md
       - Consider Docker security hardening practices: hardening.md
-      - Scale an application up to handle more traffic: scale.md
-      - Roll an application back to a previous version: rollback.md
+      - Scale an app up to handle more traffic: scale.md
+      - Roll an app back to a previous version: rollback.md
+  - App Config Guide: app-config-guide.md
   - Packager guide: packager-guide.md
   - Frequently asked questions: faq.md
   - Roadmap: roadmap.md

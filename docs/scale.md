@@ -1,5 +1,5 @@
 ---
-title: Scale an application up to handle more traffic
+title: Scale an app up to handle more traffic
 ---
 
 TODO.

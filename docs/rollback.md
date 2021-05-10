@@ -1,5 +1,5 @@
 ---
-title: Roll an application back to a previous version
+title: Roll an app back to a previous version
 ---
 
 TODO.

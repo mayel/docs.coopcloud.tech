@@ -10,7 +10,7 @@ Some handy links in the meantime:
 
 - [`abra` command-line tool repository](https://git.autonomic.zone/coop-cloud/abra) (mirrored to Github [here](https://github.com/Autonomic-Cooperative/abra))
 - [docs.cloud.autonomic.zone source repository](https://git.autonomic.zone/coop-cloud/docs.cloud.autonomic.zone) (mirrored to Github [here](https://github.com/Autonomic-Cooperative/docs.cloud.autonomic.zone))
-- [Application catalogue repositories](https://git.autonomic.zone/coop-cloud)
+- [App catalogue repositories](https://git.autonomic.zone/coop-cloud)
 - [Public roadmap repository and milestones](https://git.autonomic.zone/coop-cloud/organising/issues)
 
 !!! note

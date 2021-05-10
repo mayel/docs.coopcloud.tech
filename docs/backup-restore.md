@@ -1,5 +1,5 @@
 ---
-title: Back-up and restore an application
+title: Back-up and restore an app
 ---
 
 We'll use the example of a [`coop-cloud/wordpress`][wordpress] app deployed at
