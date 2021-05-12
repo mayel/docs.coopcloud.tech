@@ -20,7 +20,22 @@ Check [this approach](https://git.autonomic.zone/ruangrupa/login.lumbung.space).
 
 Use [this plugin](https://github.com/pulsejet/nextcloud-oidc-login). You can use [this trick](https://janikvonrotz.ch/2020/10/20/openid-connect-with-nextcloud-and-keycloak/) (see "Cryptic Usernames" work-around) to get proper usernames.
 
-> TODO(decentral1se): copy over keycloak client config and nextcloud config.php
+```
+  'oidc_login_client_id' => 'nextcloud',
+  'oidc_login_client_secret' => 'mysecret',
+  'oidc_login_provider_url' => 'https://example.com/auth/realms/myrealm',
+  'oidc_login_disable_registration' => false,
+  'oidc_login_hide_password_form' => true,
+  'oidc_login_button_text' => 'Log in with your myssodomain',
+  'oidc_login_default_group' => 'mygroup',
+  'oidc_login_attributes' =>
+  array (
+    'id' => 'sub',
+    'name' => 'name',
+    'mail' => 'email',
+  ),
+  'oidc_create_groups' => true,
+```
 
 #### Why is my synchronisation client freezing on the "grant access" step?
 
