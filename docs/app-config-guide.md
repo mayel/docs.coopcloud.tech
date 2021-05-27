@@ -47,6 +47,68 @@ There is some basic stuff in the admin settings.
 
 To go a little deeper, you can use [this handy app](https://apps.nextcloud.com/apps/theming_customcss).
 
+Here is an example CSS config which hides the local login and makes space for a central image:
+
+```css
+#body-login .wrapper main form[name="login"],
+#body-login .wrapper main form[name="login"] ~ a {
+  display: none;
+}
+
+#body-login .logo {
+  visibility: hidden;
+}
+
+#body-login #alternative-logins a.button[href*="oidc"] {
+  background: #233b4a;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+#body-login #alternative-logins a.button[href*="oidc"]:hover {
+  background: linear-gradient(-35deg, #233b4a 40%, #486c83 100%);
+}
+
+#body-login #alternative-logins a.button[href*="/sociallogin/oauth/google"] {
+  border: 0;
+  color: #db4437 !important;
+  background-color: #fff;
+}
+
+#body-login
+  #alternative-logins
+  a.button[href*="/sociallogin/oauth/google"]::before {
+  width: 25px;
+  background-color: #db4437;
+  border-radius: 100%;
+  background-size: 60%;
+  background-position: center;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+#body-login main {
+  padding: 50vh 0 0 0;
+}
+
+#body-login a[href*="#body-login"] {
+  visibility: hidden;
+}
+
+#body-login footer a,
+#body-login footer p {
+  color: #233b4a;
+}
+
+#body-login footer a:hover {
+  color: #fff;
+}
+
+#body-login footer p.info {
+  text-shadow: none;
+}
+```
+
 ## Drone
 
 #### Generating deploy keys
