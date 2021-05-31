@@ -27,13 +27,13 @@ On your server, you'll want to install [Docker](https://www.docker.com/). This c
 On a [Debian system](https://docs.docker.com/engine/install/debian/), that can be done like so.
 
 ```bash
-$ sudo apt-get remove docker docker-engine docker.io containerd runc
-$ sudo apt update
-$ sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
-$ sudo apt-get update
-$ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt update
+sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
 ## Bootstrap `abra`
@@ -52,7 +52,7 @@ Firstly, install `abra` locally.
     Bash.
 
 ```bash
-$ curl https://install.abra.autonomic.zone | bash
+curl https://install.abra.autonomic.zone | bash
 ```
 
 The source for this script [is here](https://git.autonomic.zone/coop-cloud/abra/src/branch/main/installer/installer).
@@ -60,14 +60,14 @@ The source for this script [is here](https://git.autonomic.zone/coop-cloud/abra/
 You may need to add the `~/.local/bin/` directory with your `$PATH` in order to run the executable.
 
 ```bash
-$ export PATH=$PATH:$HOME/.local/bin
-$ abra --help  # check it works
+export PATH=$PATH:$HOME/.local/bin
+abra --help  # check it works
 ```
 
 Now you can connect `abra` with your new server.
 
 ```bash
-$ abra server add example.com
+abra server add example.com
 ```
 
 Where `example.com` is replaced with your server DNS name.
@@ -83,7 +83,7 @@ Where `example.com` is replaced with your server DNS name.
 Once you've added the sever, you can initialise the [new single-host swarm](https://docs.docker.com/engine/swarm/key-concepts/).
 
 ```bash
-$ abra server example.com init
+abra server example.com init
 ```
 
 You will now have a new `~/.abra/` folder on your local file system which stores all the configuration of your Co-op Cloud instance. You can easily share this as a git repository with others.
@@ -93,7 +93,7 @@ You will now have a new `~/.abra/` folder on your local file system which stores
 In order to have your Co-op cloud installation automagically provision SSL certificates, we will first install [Traefik](https://doc.traefik.io/traefik/). This tool is the main entrypoint for all web requests (e.g. like NGINX) and supports automatic SSL certificate configuration and other quality-of-life features which make deploying libre apps more enjoyable.
 
 ```bash
-$ abra app new --server example.com --domain traefik.example.com traefik
+abra app new --server example.com --domain traefik.example.com traefik
 ```
 
 We can then choose `traefik` as the app name.
@@ -101,20 +101,20 @@ We can then choose `traefik` as the app name.
 You will want to take a look at your generated configuration and tweak the `LETS_ENCRYPT_EMAIL` value:
 
 ```bash
-$ abra app traefik config
+abra app traefik config
 ```
 
 This is the required environment variables that you can configure and are injected into the app configuration when deployed.
 
 ```
-$ abra app traefik deploy
+abra app traefik deploy
 ```
 
 We can then check that everything came up as expected.
 
 ```bash
-$ abra app traefik ps   # status check
-$ abra app traefik logs # logs watch
+abra app traefik ps   # status check
+abra app traefik logs # logs watch
 ```
 
 ## Deploy Nextcloud
@@ -124,7 +124,7 @@ And now we can deploy apps.
 Let's create a new Nextcloud app.
 
 ```bash
-$ abra app new --server example.com --domain cloud.example.com nextcloud
+abra app new --server example.com --domain cloud.example.com nextcloud
 ```
 
 We can then choose `nextcloud` as the app name.
@@ -132,7 +132,7 @@ We can then choose `nextcloud` as the app name.
 And we need to generate secrets for the app: database connection password, root password and admin password.
 
 ```bash
-$ abra app nextcloud secret generate --all
+abra app nextcloud secret generate --all
 ```
 
 !!! warning
@@ -145,14 +145,14 @@ $ abra app nextcloud secret generate --all
 Then we can deploy the Nextcloud.
 
 ```bash
-$ abra app nextcloud deploy
+abra app nextcloud deploy
 ```
 
 And once again, we can watch to see that things come up correctly.
 
 ```bash
-$ abra app nextcloud ps   # status check
-$ abra app nextcloud logs # logs watch
+abra app nextcloud ps   # status check
+abra app nextcloud logs # logs watch
 ```
 
 !!! note
@@ -161,7 +161,7 @@ $ abra app nextcloud logs # logs watch
     command under `watch` like so.
 
     ```bash
-    $ watch abra app nextcloud ps
+    watch abra app nextcloud ps
     ```
 
     And you can wait until you see that all containers have the "Running" state.
