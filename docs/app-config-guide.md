@@ -116,7 +116,7 @@ Here is an example CSS config which hides the local login and makes space for a 
 We normally do something like the following.
 
 ```bash
-$ ssh-keygen -t ed25519 -C drone@swarm.autonomic.zone
+ssh-keygen -t ed25519 -C drone@swarm.autonomic.zone
 ```
 
 When you're loading them into Drone, make sure to use the right name of the organisation when using `drone orgsecret add`.
@@ -126,16 +126,16 @@ When you're loading them into Drone, make sure to use the right name of the orga
 First, get your Drone CLI tool downloaded and the environment configured.
 
 ```bash
-$ export DRONE_SERVER=https://drone.example.com
-$ export DRONE_TOKEN=$(pass show your-pass-store-path)
-$ curl -L https://github.com/drone/drone-cli/releases/latest/download/drone_linux_amd64.tar.gz | tar zx
+export DRONE_SERVER=https://drone.example.com
+export DRONE_TOKEN=$(pass show your-pass-store-path)
+curl -L https://github.com/drone/drone-cli/releases/latest/download/drone_linux_amd64.tar.gz | tar zx
 ```
 
 Then you can do things like:
 
 ```
-$ ./drone orgsecret ls
-$ ./drone orgsecret add someorg my_deploy_key @my_private_key_file
+./drone orgsecret ls
+./drone orgsecret add someorg my_deploy_key @my_private_key_file
 ```
 
 #### How to enable build failure notifications

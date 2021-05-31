@@ -12,8 +12,8 @@ Let's take as an example, [Matomo web analytics](https://matomo.org/).
 I'm feeling lazy so, luckily for me, Matomo already has an example compose file in their repository! Let's download and edit it:
 
 ```
-$ mkdir matomo && cd matomo
-$ wget https://raw.githubusercontent.com/matomo-org/docker/master/.examples/apache/docker-compose.yml -O compose.yml
+mkdir matomo && cd matomo
+wget https://raw.githubusercontent.com/matomo-org/docker/master/.examples/apache/docker-compose.yml -O compose.yml
 ```
 
 Open the `compose.yml` in your favourite editor and have a gander :swan: . There are a few things we're looking for -- full list to come -- but a few things we can immediately see are:

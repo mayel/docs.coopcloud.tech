@@ -7,7 +7,7 @@ title: Managing secret data
 Co-op Cloud uses [Docker Secrets] to handle sensitive data, like database passwords and API keys, securely:
 
 ```
-$ DOCKER_CONTEXT=swarm.example.com docker secret ls
+DOCKER_CONTEXT=swarm.example.com docker secret ls
 example_mediawiki_db_password_v1
 example_wordpress_db_password_v1
 ```
@@ -27,7 +27,7 @@ You will notice `v1` in the example secret names above: like Docker Configs, Doc
 Because secret versions are managed per-instance by the people deploying their apps, secret versions are stored in the `.env` file for each app:
 
 ```
-$ find -L ~/.abra/servers/ -name '*.env' -print0 | xargs -0 grep -h SECRET
+find -L ~/.abra/servers/ -name '*.env' -print0 | xargs -0 grep -h SECRET
 OIDC_CLIENT_SECRET_VERSION=v1
 RPC_SECRET_VERSION=v1
 CLIENT_SECRET_VERSION=v1
@@ -37,7 +37,7 @@ CLIENT_SECRET_VERSION=v1
 If you try and add a secret version which already exists, Docker will helpfully complain:
 
 ```
-$ abra app example_wordpress secret insert db_password v1 foobar
+abra app example_wordpress secret insert db_password v1 foobar
 Error response from daemon: rpc error: code = AlreadyExists desc = secret example_wordpress_db_password_v1 already exists
 ```
 

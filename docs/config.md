@@ -7,13 +7,13 @@ Co-op Cloud stores per-app configuration in the `$USER/.abra/servers` directory,
 The format of these configuration files is the same environment variable syntax used by Docker (with the `env_file:` statement in a `docker-compose.yml` file, or the `--env-file` option to `docker run`) and `direnv`:
 
 ```
-$ abra app example_wordpress config
-TYPE=wordpress                                                                     
-                                                                                     
+abra app example_wordpress config
+TYPE=wordpress
+
 DOMAIN=wordpress.example.com
-## Domain aliases                                                                  
-EXTRA_DOMAINS=', `www.wordpress.example.com`'                                         
-LETS_ENCRYPT_ENV=production 
+## Domain aliases
+EXTRA_DOMAINS=', `www.wordpress.example.com`'
+LETS_ENCRYPT_ENV=production
 ...
 ```
 
@@ -51,18 +51,18 @@ git commit -m "Initial import"
 
 !!! warning "Test your revision-control self-discipline"
 
-		`abra` does not yet help keep your app definitions are up-to-date.
+    	`abra` does not yet help keep your app definitions are up-to-date.
 
-		Make sure to run `git add` / `git commit` after making configuration changes, and `cd ~/.abra/servers && git pull` before running `abra app...` commands.
+    	Make sure to run `git add` / `git commit` after making configuration changes, and `cd ~/.abra/servers && git pull` before running `abra app...` commands.
 
-		Patches to add some safety checks and auto-updates would be very welcome! 🙏
+    	Patches to add some safety checks and auto-updates would be very welcome! 🙏
 
 ## Collaborating with multiple teams
 
 In a more complex situation, where you're using Co-op Cloud to manage several servers, and you're collaborating with different people on different servers, you can set up **a separate repository for each subdirectory in `~/.abra/servers`**, or even a mixture of single-server and multi-server repositories:
 
 ```
-$ ls -l ~/.abra/servers
+ls -l ~/.abra/servers
 # Example.com's own app configuration:
 lrwxrwxrwx. 1 user user 49 Oct 30 22:42 swarm.example.com -> /home/user/Example/coop-cloud-apps/swarm.example.com
 # Configuration for one of Example.com's clients – part of the same repository:
@@ -77,29 +77,30 @@ We don't have a public example of this yet, but something like this should do th
 
 1. Save this as `Makefile` in your repository:
 
-	```
-	# -s symlink, -f force creation, -F don't create symlink in the target dir
-	link:
-		@mkdir -p ~/.abra/servers/
-		@for SERVER in $$(find -maxdepth 1 -type d -name "[!.]*"); do \
-			echo ln -sfF "$$(pwd)/$${SERVER#./}" ~/.abra/servers/ ; \
-			ln -sfF "$$(pwd)/$${SERVER#./}" ~/.abra/servers/ ; \
-		done
-	```
-	This will set up symlinks from each directory in your repository to a correspondingly-named directory in `~/.abra/servers` – if your repository has a `swarm.example.com` directory, it'll be linked as `~/.abra/servers/swarm.example.com`.
+   ```
+   # -s symlink, -f force creation, -F don't create symlink in the target dir
+   link:
+   	@mkdir -p ~/.abra/servers/
+   	@for SERVER in $$(find -maxdepth 1 -type d -name "[!.]*"); do \
+   		echo ln -sfF "$$(pwd)/$${SERVER#./}" ~/.abra/servers/ ; \
+   		ln -sfF "$$(pwd)/$${SERVER#./}" ~/.abra/servers/ ; \
+   	done
+   ```
+
+   This will set up symlinks from each directory in your repository to a correspondingly-named directory in `~/.abra/servers` – if your repository has a `swarm.example.com` directory, it'll be linked as `~/.abra/servers/swarm.example.com`.
 
 2. Tell your collaborators (e.g. in the repository's `README`), to run `make` in their repository check-out.
 
 !!! warning "You're on your own!"
 
-	As with the [simple repository set-up above](#version-control), `abra` doesn't yet help you update your version control system when you make changes, nor check version control to make sure you have the latest configuration.
+    As with the [simple repository set-up above](#version-control), `abra` doesn't yet help you update your version control system when you make changes, nor check version control to make sure you have the latest configuration.
 
-	Make sure to `commit` and `push` after you make any configuration changes, and `pull` before running any `abra app...` commands.
+    Make sure to `commit` and `push` after you make any configuration changes, and `pull` before running any `abra app...` commands.
 
 ## Even more granularity?
 
 The plain-text, file-based configuration format means that you could even keep the configuration for different apps on the same server in different repositories, e.g. having `git.example.com` configuration in a separate repository to `wordpress.example.com`, using per-file symlinks.
 
-We don't currently recommend this, because it might set inaccurate expectations about the security model – remember that, by default, **any user who can deploy apps to a Docker Swarm can manage *any* apps in that swarm**.
+We don't currently recommend this, because it might set inaccurate expectations about the security model – remember that, by default, **any user who can deploy apps to a Docker Swarm can manage _any_ apps in that swarm**.
 
 [symlink]: https://en.wikipedia.org/wiki/Symlink
