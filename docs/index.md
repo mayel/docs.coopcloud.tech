@@ -2,9 +2,11 @@
 title: Co-op Cloud
 ---
 
-![co-op cloud logo](img/coop_cloud_logo_pink.png)
-
 Welcome to the Co-op Cloud technical documentation. This documentation is primarily meant for co-operatives and other democratic tech collectives already doing libre software hosting who are interested in the project and thinking about doing some early-adopter testing.
+
+!!! note "Looking for managed Co-op Cloud hosting?"
+
+    If you're looking for a co-operative or tech collective to host digital services for you using the Co-op Cloud, then please see [the managed hosting](/managed/) page for more.
 
 !!! danger "Here be dragons"
 
