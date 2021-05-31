@@ -40,18 +40,18 @@ available versions of the `gitea` recipe, two with the same version of the
  - db (mariadb:10.6, 718cb856)
 ```
 
-Versions `1.14.1-rootless` and `1.14.1-rooless_1`  differ only in their version
+Versions `1.14.1-rootless` and `1.14.1-rooless_1` differ only in their version
 of the `mariadb` service. If there had been several updates to the `mariadb`
 image in between updates to the `gitea` image, there might have also been
 `1.14.1-rooless_2`, `1.14.1-rooless_3` -- this is more likely with recipes which
 include services with several different images.
 
-!!! note 
+!!! note
 
-	Not all of these updates will be released as installable Co-op Cloud recipes
-	-- in this example, there's no version with `gitea:1.14.2-rootless` and
-	`mariadb:10.5`. If you need a specific combination, create a pull request or
-	issue in the repository for the app recipe!
+    Not all of these updates will be released as installable Co-op Cloud recipes
+    -- in this example, there's no version with `gitea:1.14.2-rootless` and
+    `mariadb:10.5`. If you need a specific combination, create a pull request or
+    issue in the repository for the app recipe!
 
 [gitea]: https://git.autonomic.zone/coop-cloud/gitea/src/tag/1.13.4
 [tags]: https://docs.docker.com/engine/reference/commandline/tag/
