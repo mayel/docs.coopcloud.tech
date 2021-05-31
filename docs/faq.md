@@ -34,6 +34,10 @@ The project was started by workers at [Autonomic](https://autonomic.zone/) which
 
 Please read our [initial project announcement post](https://autonomic.zone/blog/co-op-cloud/) for more on this.
 
+## How do I package an app?
+
+See [the packager guide documentation](/packager-guide/#package-your-first-application) for more.
+
 ## What about `$alternative`?
 
 We have various technical critiques of other similar projects which are already up-and-running in the ecosystem, as they don't necessarily meet our needs as a small tech co-op. However, Co-op Cloud isn't meant to be a replacement for these other projects.

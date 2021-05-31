@@ -41,8 +41,7 @@ nav:
   - Frequently asked questions: faq.md
   - Contributing guide: contribute.md
   - Admin guide:
-      - Package your first app: package.md
-      - Manage your app configuration: config.md
+      - How to manage the .abra directory: config.md
       - Manage secret data: secrets.md
       - Back-up and restore an app: backup-restore.md
       - Scale an app up to handle more traffic: scale.md
