@@ -241,3 +241,7 @@ It can also pay off when dealing with GDPR related issues and the need to have m
 - [Official release changelog for Docker Engine (look for entries under the "Swarm" header)](https://docs.docker.com/engine/release-notes/)
 - [All issues raised with label `area/swarm` label on github.com/moby/moby](https://github.com/moby/moby/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%2Fswarm)
 - [All pull requests submitted with the `area/swarm` label on github.com/moby/moby](https://github.com/moby/moby/pulls?q=is%3Aopen+is%3Apr+label%3Aarea%2Fswarm)
+
+## Can I run Co-op Cloud on multiple servers?
+
+Yes! Horizontal scaling is one of the ways Co-op Cloud can really shine. `abra` is designed to handle multiple servers from the first day. As long as you have a DNS entry pointing to your server then Co-op Cloud can serve apps (e.g. you can serve a `wordpress1.mydomain.com` from one server and a `wordpress2.mydomain.com` from another server) and `abra` handles this seamlessly.
