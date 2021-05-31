@@ -2,7 +2,7 @@
 title: Co-op Cloud
 ---
 
-Welcome to the Co-op Cloud technical documentation. This documentation is primarily meant for co-operatives and other democratic tech collectives already doing libre software hosting who are interested in the project and thinking about doing some early-adopter testing.
+Welcome to the Co-op Cloud technical documentation. This documentation is primarily meant for co-ops and other democratic tech collectives already doing libre software hosting who are interested in the project and thinking about doing some early-adopter testing.
 
 - If you're already familiar with the project and want to dive in, then head over to the [getting started guide](/overview/).
 
