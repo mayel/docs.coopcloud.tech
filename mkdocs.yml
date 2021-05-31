@@ -36,20 +36,20 @@ nav:
       - Architecture overview: overview.md
       - Deploy your first app: deploy.md
   - App catalogue: apps.md
-  - Tutorials:
+  - App config guide: app-config-guide.md
+  - Packager guide: packager-guide.md
+  - Frequently asked questions: faq.md
+  - Contributing guide: contribute.md
+  - Admin guide:
       - Package your first app: package.md
       - Manage your app configuration: config.md
       - Manage secret data: secrets.md
       - Back-up and restore an app: backup-restore.md
       - Scale an app up to handle more traffic: scale.md
       - Roll an app back to a previous version: rollback.md
-  - App config guide: app-config-guide.md
-  - Packager guide: packager-guide.md
-  - Frequently asked questions: faq.md
   - Roadmap: roadmap.md
-  - Contributing guide: contribute.md
   - Get in touch: contact.md
-  - Credits & thanks: credits.md
+  - Acknowledgements: credits.md
 
 plugins:
   - search
