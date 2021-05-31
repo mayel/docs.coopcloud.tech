@@ -11,6 +11,8 @@ theme:
   palette:
     primary: light pink
     accent: purple
+  logo: img/favicon.ico
+  favicon: img/favicon.ico
 
 copyright: Copyleft 🄯 2021 The Co-operative Cloud
 
