@@ -41,7 +41,6 @@ nav:
       - Manage your app configuration: config.md
       - Manage secret data: secrets.md
       - Back-up and restore an app: backup-restore.md
-      - Consider Docker security hardening practices: hardening.md
       - Scale an app up to handle more traffic: scale.md
       - Roll an app back to a previous version: rollback.md
   - App config guide: app-config-guide.md
