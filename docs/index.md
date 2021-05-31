@@ -4,13 +4,13 @@ title: Co-op Cloud
 
 Welcome to the Co-op Cloud technical documentation. This documentation is primarily meant for co-ops and other democratic tech collectives already doing libre software hosting who are interested in the project and thinking about doing some early-adopter testing.
 
-- If you're already familiar with the project and want to dive in, then head over to the [getting started guide](/overview/).
+- Already familiar with the project and want to dive in? See the [getting started guide](/overview/).
 
-- If you want to see what applications are already available, then check out the [app catalogue](/apps/).
+- Want to see what apps are already available? See the [app catalogue](/apps/).
 
-- If you're new and trying to understand more about the project, then please see [the FAQ](/faq/).
+- Trying to understand more about the project? See the [the FAQ](/faq/).
 
-- If you want to learn more about the goals and background of the project, then please see the [strategy](/strategy) page.
+- Interested to learn more about the goals and background of the project? See the [strategy page](/strategy).
 
 !!! danger "Here be dragons"
 
