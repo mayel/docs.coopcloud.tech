@@ -34,6 +34,8 @@ The project was started by workers at [Autonomic](https://autonomic.zone/) which
 
 Please read our [initial project announcement post](https://autonomic.zone/blog/co-op-cloud/) for more on this.
 
+Also see our [strategy page](/strategy/).
+
 ## How do I package an app?
 
 See [the packager guide documentation](/packager-guide/#package-your-first-application) for more.

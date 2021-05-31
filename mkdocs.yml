@@ -48,6 +48,7 @@ nav:
       - Back-up and restore an app: backup-restore.md
       - Scale an app up to handle more traffic: scale.md
       - Roll an app back to a previous version: rollback.md
+  - Strategy: strategy.md
   - Roadmap: roadmap.md
   - Get in touch: contact.md
   - Acknowledgements: credits.md
