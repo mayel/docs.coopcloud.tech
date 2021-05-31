@@ -4,7 +4,7 @@ title: Co-op Cloud
 
 ![co-op cloud logo](img/coop_cloud_logo_pink.png)
 
-Welcome to the Co-op Cloud technical documentation. This documentation is primarily meant for cooperatives and other small service providers already doing free software hosting who are interested in the project and thinking about doing some early-adopter testing.
+Welcome to the Co-op Cloud technical documentation. This documentation is primarily meant for co-operatives and other democratic tech collectives already doing libre software hosting who are interested in the project and thinking about doing some early-adopter testing.
 
 !!! danger "Here be dragons"
 
