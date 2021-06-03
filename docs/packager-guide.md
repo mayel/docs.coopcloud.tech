@@ -99,11 +99,11 @@ include services with several different images.
 
 ## Automation
 
-## Upgrades
+### Upgrades
 
 See [autonomic-cooperative/renovate-bot](https://git.autonomic.zone/autonomic-cooperative/renovate-bot).
 
-## Releases
+### Releases
 
 ```
 ---
@@ -121,7 +121,7 @@ trigger:
     - tag
 ```
 
-## Failure notifications
+### Failure notifications
 
 ```yaml
   - name: notify coopcloud-dev on failure
