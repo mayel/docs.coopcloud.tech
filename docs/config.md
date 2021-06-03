@@ -101,6 +101,6 @@ We don't have a public example of this yet, but something like this should do th
 
 The plain-text, file-based configuration format means that you could even keep the configuration for different apps on the same server in different repositories, e.g. having `git.example.com` configuration in a separate repository to `wordpress.example.com`, using per-file symlinks.
 
-We don't currently recommend this, because it might set inaccurate expectations about the security model – remember that, by default, **any user who can deploy apps to a Docker Swarm can manage _any_ apps in that swarm**.
+We don't currently recommend this, because it might set inaccurate expectations about the security model – remember that, by default, **any user who can deploy apps to a Docker Swarm can manage _any_ app in that swarm**.
 
 [symlink]: https://en.wikipedia.org/wiki/Symlink
