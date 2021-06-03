@@ -96,3 +96,45 @@ include services with several different images.
 
 [gitea]: https://git.autonomic.zone/coop-cloud/gitea/src/tag/1.13.4
 [tags]: https://docs.docker.com/engine/reference/commandline/tag/
+
+## Automation
+
+## Upgrades
+
+See [autonomic-cooperative/renovate-bot](https://git.autonomic.zone/autonomic-cooperative/renovate-bot).
+
+## Releases
+
+```
+---
+kind: pipeline
+name: recipe release
+steps:
+  - name: release a new version
+    image: decentral1se/drone-abra:latest
+    settings:
+      command: recipe ${REPO_NAME} release
+      deploy_key:
+        from_secret: abra_bot_deploy_key
+trigger:
+  event:
+    - tag
+```
+
+## Failure notifications
+
+```yaml
+  - name: notify coopcloud-dev on failure
+    image: plugins/matrix
+    settings:
+      homeserver: https://matrix.autonomic.zone
+      roomid: "IFazIpLtxiScqbHqoa:autonomic.zone"
+      userid: "@autono-bot:autonomic.zone"
+      accesstoken:
+        from_secret: autono_bot_access_token
+    depends_on:
+    - deployment
+  when:
+    status:
+      - failure
+```
