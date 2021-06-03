@@ -113,12 +113,9 @@ steps:
   - name: release a new version
     image: decentral1se/drone-abra:latest
     settings:
-      command: recipe ${REPO_NAME} release
+      command: recipe YOURRECIPE release
       deploy_key:
         from_secret: abra_bot_deploy_key
-trigger:
-  event:
-    - tag
 ```
 
 ### Failure notifications
