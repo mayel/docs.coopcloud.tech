@@ -60,3 +60,6 @@ plugins:
 repo_name: coop-cloud/docs.cloud.autonomic.zone
 repo_url: https://git.autonomic.zone/coop-cloud/docs.cloud.autonomic.zone
 edit_uri: _edit/main/docs/
+
+extra_css:
+  - styles/extra.css
