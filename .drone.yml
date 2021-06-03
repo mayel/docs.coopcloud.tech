@@ -18,6 +18,21 @@ steps:
       stack: coop_cloud_mkdocs
       deploy_key:
         from_secret: drone_ssh_swarm.autonomic.zone
+
+  - name: notify coopcloud-dev on failure
+    image: plugins/matrix
+    settings:
+      homeserver: https://matrix.autonomic.zone
+      roomid: "IFazIpLtxiScqbHqoa:autonomic.zone"
+      userid: "@autono-bot:autonomic.zone"
+      accesstoken:
+        from_secret: autono_bot_access_token
+    depends_on:
+      - bundle static
+      - deployment
+    when:
+      status:
+        - failure
 trigger:
   branch:
     - main
