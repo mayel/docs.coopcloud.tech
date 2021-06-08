@@ -135,3 +135,11 @@ steps:
     status:
       - failure
 ```
+
+### Github mirroring
+
+See [auto-mirror](https://git.autonomic.zone/coop-cloud/auto-mirror).
+
+## Packaging style guide
+
+- Please don't use `&image` YAML repeat anchors on the `image: ...` key because our `recipe release` logic does not handle it (see [#172](https://git.autonomic.zone/coop-cloud/abra/issues/172))
