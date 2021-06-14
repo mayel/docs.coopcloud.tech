@@ -2,6 +2,8 @@
 title: Manage your app configuration
 ---
 
+## Understanding app and server configuration
+
 Co-op Cloud stores per-app configuration in the `$USER/.abra/servers` directory, on whichever machine you're running `abra` on (by default, your own workstation).
 
 The format of these configuration files is the same environment variable syntax used by Docker (with the `env_file:` statement in a `docker-compose.yml` file, or the `--env-file` option to `docker run`) and `direnv`:
