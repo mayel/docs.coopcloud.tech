@@ -3,7 +3,7 @@ version: "3.8"
 
 services:
   app:
-    image: "decentral1se/docs.coopcloud.tech:latest"
+    image: thecoopcloud/docs.coopcloud.tech:latest
     networks:
       - proxy
     healthcheck:

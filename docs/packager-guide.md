@@ -111,7 +111,7 @@ kind: pipeline
 name: recipe release
 steps:
   - name: release a new version
-    image: decentral1se/drone-abra:latest
+    image: thecoopcloud/drone-abra:latest
     settings:
       command: recipe YOURRECIPE release
       deploy_key:
