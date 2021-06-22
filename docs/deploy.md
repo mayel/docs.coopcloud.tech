@@ -22,7 +22,7 @@ Where `116.203.211.204` can be replaced with the IP address of your server.
 
 ## Install server prerequisites
 
-On your server, you'll want to install [Docker](https://www.docker.com/). This can be done by following the [install documentation](https://docs.docker.com/engine/install/).
+You'll want to install [Docker](https://www.docker.com/) both on your server and your local machine. This can be done by following the [install documentation](https://docs.docker.com/engine/install/).
 
 On a [Debian system](https://docs.docker.com/engine/install/debian/), that can be done like so.
 
@@ -86,6 +86,23 @@ Once you've added the sever, you can initialise the [new single-host swarm](http
 abra server example.com init
 ```
 
+You might see some messages from docker-swarm such as:
+
+```bash
+Swarm initialized: current node (<node id>) is now a
+manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token <token> <IP address>
+
+To add a manager to this swarm, run 'docker swarm join-token manager'
+and follow the instructions.
+
+<node id>
+```
+
+
 You will now have a new `~/.abra/` folder on your local file system which stores all the configuration of your Co-op Cloud instance. You can easily share this as a git repository with others.
 
 ## Deploy Traefik
@@ -110,7 +127,11 @@ This is the required environment variables that you can configure and are inject
 abra app traefik deploy
 ```
 
-We can then check that everything came up as expected.
+If you get a message like this:
+```bash
+ERROR: https://traefik.example.com still isn't up, check status by running "abra app traefik ps"
+```
+It might need a few seconds more to start up. We can then check that everything came up as expected.
 
 ```bash
 abra app traefik ps   # status check
@@ -129,11 +150,17 @@ abra app new --server example.com --domain cloud.example.com nextcloud
 
 We can then choose `nextcloud` as the app name.
 
-And we need to generate secrets for the app: database connection password, root password and admin password.
+And we need to generate secrets for the app: database connection password, root password and admin password. 
 
 ```bash
 abra app nextcloud secret generate --all
 ```
+
+If abra complains about lacking pwqgen, it is available in the packet passwdqc on debian. Install it with
+```bash
+sudo apt-get install passwdqc
+```
+and run the previous command again.
 
 !!! warning
 
