@@ -9,7 +9,7 @@ The "Kite Flying Hour" is a weekly public moment where anyone can "drop by" into
 - Someone from Autonomic will volunteer to be present and talk about the project for an hour weekly from 15:00 CEST - 16:00 CEST
 - We announce the hour via our socials
     - [ ] A pinned toot on [`@coopcloud@social.coop`](https://social.coop/@coopcloud)
-    - [ ] A pinned tweet on [`our soon to be made Co-op Cloud twitter account`](#TODO)
+    - [ ] A pinned tweet on [`@Coop_Cloud`](https://twitter.com/Coop_Cloud)
     - [ ] A post to the `#coopcloud:autonomic.zone` room
 
 Here is some invitation boilerplate which you can use:
