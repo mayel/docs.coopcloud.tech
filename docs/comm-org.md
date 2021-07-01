@@ -2,7 +2,7 @@
 title: Community Organising
 ---
 
-## Kite Flying Hour
+## Kite Flying Hours
 
 The "Kite Flying Hour" is a weekly public moment where anyone can "drop by" into a Jitsi call and ask/do/propose whatever and meet some people who are currently working on the project. We haven't worked it all out but our process for now is the following:
 
