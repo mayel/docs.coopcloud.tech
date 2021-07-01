@@ -42,6 +42,7 @@ nav:
   - Packager guide: packager-guide.md
   - Frequently asked questions: faq.md
   - Contributing guide: contribute.md
+  - Community organising: comm-org.md
   - Admin guide:
       - How to manage the .abra directory: config.md
       - Manage secret data: secrets.md
