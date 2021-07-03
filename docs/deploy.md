@@ -4,7 +4,9 @@ title: Deploy your first app
 
 In order to deploy an app you need two things:
 
-1. a server (e.g. [Hetzner VPS](https://www.hetzner.com/cloud))
+1. a server (e.g. [Hetzner VPS](https://www.hetzner.com/cloud)), with
+    - SSH access
+    - a public IP address
 2. a DNS provider (e.g. [Gandi](https://www.gandi.net/en))
 
 ## Create your server
@@ -34,6 +36,12 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+```
+
+You'll probably want to add your user to the `docker` group:
+
+```bash
+usermod -a -G docker myusername
 ```
 
 ## Bootstrap `abra`
@@ -72,13 +80,17 @@ abra server add example.com
 
 Where `example.com` is replaced with your server DNS name.
 
-!!! note
+!!! note "About SSH"
+    `abra` uses Docker's built-in SSH support to make a secure connection to a
+    remote Docker daemon, to deploy and manage apps from your local development
+    machine.
 
-    `abra server add` accepts also a `<user>` and `<port>` arguments for your
-    custom SSH connection details. What is happening here is that you are using
-    the underlying SSH machinery to make a secure connection to the server
-    installed Docker daemon. This allows `abra` to run remote deployments from
-    your local development machine.
+    If you need to specify a non-standard port, and/or different username, for SSH,
+    add them as extra arguments:
+
+    ```bash
+    abra server add example.com username 2222
+    ```
 
 Once you've added the sever, you can initialise the [new single-host swarm](https://docs.docker.com/engine/swarm/key-concepts/).
 
@@ -102,7 +114,6 @@ and follow the instructions.
 <node id>
 ```
 
-
 You will now have a new `~/.abra/` folder on your local file system which stores all the configuration of your Co-op Cloud instance. You can easily share this as a git repository with others.
 
 ## Deploy Traefik
@@ -121,7 +132,7 @@ You will want to take a look at your generated configuration and tweak the `LETS
 abra app traefik config
 ```
 
-This is the required environment variables that you can configure and are injected into the app configuration when deployed.
+Every app you deploy will have one of these `.env` files, which contains variables which will be injected into app configurations when deployed. Variables starting with `#` are optional, others are required.
 
 ```
 abra app traefik deploy
@@ -131,12 +142,7 @@ If you get a message like this:
 ```bash
 ERROR: https://traefik.example.com still isn't up, check status by running "abra app traefik ps"
 ```
-It might need a few seconds more to start up. We can then check that everything came up as expected.
-
-```bash
-abra app traefik ps   # status check
-abra app traefik logs # logs watch
-```
+then it might need a few seconds more to start up. You can run `abra app traefik ps`, as suggested, to see when it's ready – look for `Running` under `CURRENT STATUS` – or `abra app traefik logs` to see app logs.
 
 ## Deploy Nextcloud
 
