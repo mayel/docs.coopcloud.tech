@@ -28,7 +28,7 @@ The project was started by workers at [Autonomic](https://autonomic.zone/) which
 - 👎 Still a very young project
 - 👎 Limited availability of well tested apps
 - 👎 Requires command line knowledge to use
-- 👎 Currently x86 only
+- 👎 Currently x86 only (see [this FAQ question](#why-only-x86-support) for more)
 
 ## Why start another project?
 
@@ -247,3 +247,7 @@ It can also pay off when dealing with GDPR related issues and the need to have m
 ## Can I run Co-op Cloud on multiple servers?
 
 Yes! Horizontal scaling is one of the ways Co-op Cloud can really shine. `abra` is designed to handle multiple servers from the first day. As long as you have a DNS entry pointing to your server then Co-op Cloud can serve apps (e.g. you can serve a `wordpress1.mydomain.com` from one server and a `wordpress2.mydomain.com` from another server) and `abra` handles this seamlessly.
+
+## Why only x86 support?
+
+We would love to do ARM support and hope to get there! We've been testing this and [ran into some issues](https://git.autonomic.zone/coop-cloud/organising/issues/25). The TLDR; is that most upstream libre app developer communities are not publishing container builds that support ARM. Since one of the core goals is to coordinate and reuse upstream packaging work, we see that ARM support requires a lot of organising and community engagement. Perhaps projects themselves will not want to take on this burden? It is not the role of the Co-op Cloud to set up an entire ARM publishing work flow at this moment in time. We see the massive benefits of supporting ARM and if you've got ideas / thoughts / appraoches for how to make progress here, [please get in touch](https://docs.coopcloud.tech/contact/).
