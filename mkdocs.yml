@@ -50,7 +50,7 @@ nav:
       - Scale an app up to handle more traffic: scale.md
       - Roll an app back to a previous version: rollback.md
   - Strategy: strategy.md
-  - Roadmap: roadmap.md
+  - Bikemap: bikemap.md
   - Troubleshooting: troubleshooting.md
   - Managed Hosting: managed.md
   - Get in touch: contact.md
