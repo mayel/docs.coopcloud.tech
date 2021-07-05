@@ -2,6 +2,16 @@
 title: Community Organising
 ---
 
+## Monthly updates on progress
+
+We have decided we'll try to do monthly progress updates. These will be published on the Co-op Cloud blog.
+
+It's a pretty loose format and we're basically just copy/pasta'ing things to a public pad during the month:
+
+> [This month in Co-op Cloud](https://pad.autonomic.zone/YHKn4vHORmS6wjN1t2zi5A?both)
+
+Feel free to add your items to the monthly agenda and they will be included!
+
 ## Kite Flying Hours
 
 The "Kite Flying Hour" is a weekly public moment where anyone can "drop by" into a Jitsi call and ask/do/propose whatever and meet some people who are currently working on the project. We haven't worked it all out but our process for now is the following:
