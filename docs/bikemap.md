@@ -1,5 +1,5 @@
 ---
-title: Bikemap
+title: Bike map
 ---
 
 ## Current status
