@@ -51,7 +51,7 @@ abra app wordpress_blog_example_com restore blog_example_com_app.tar.gz
 and/or the database:
 
 ```
-abra app wordpress_blog_example_com restore blog_example_com_db.sql.gz
+abra app wordpress_blog_example_com restore db blog_example_com_db.sql.gz
 ```
 
 (there isn't yet a command to restore files and database data at the same time)
